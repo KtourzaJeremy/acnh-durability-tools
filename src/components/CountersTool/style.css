@@ -1,4 +1,4 @@
-.Counters {
+.CountersTool {
   padding: 20px;
   display: flex;
   max-width: 100vw;
@@ -7,7 +7,7 @@
   flex-wrap: wrap;
 }
 
-.Counter {
+.CounterTool {
   padding: 10px;
   margin: 10px;
   display: flex;
@@ -17,21 +17,21 @@
   border-radius: var(--size-border-radius);
 }
 
-.Counter > :not(:last-child) {
+.CounterTool > :not(:last-child) {
   margin-bottom: .5em;
 }
 
-.Counter img {
+.CounterTool img {
   height: 200px;
   margin: 0 auto;
 }
 
-.Counter--hits {
+.CounterTool--hits {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.Counter--hits > p {
+.CounterTool--hits > p {
   margin: 0 1em;
 }

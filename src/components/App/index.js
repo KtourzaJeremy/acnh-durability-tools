@@ -1,22 +1,23 @@
 import React, { useState } from 'react';
 import { FormattedMessage } from "react-intl";
-import useLocalStorage from "../../hooks/local-storage"
+import { useCountersTools } from "../../contexts/counters-tools"
+import { useCountersBugs } from "../../contexts/counters-bugs"
 import ToolCategories from "../ToolCategories"
-import Counters from "../Counters"
+import CountersTool from "../CountersTool"
 import CountersBug from "../CountersBug"
 import './style.css';
 
 function App(props) {
   const [condition, setCondition] = useState(true)
-  const [counterAutoIncrement, setCounterAutoIncrement] = useLocalStorage("adt:id", 100)
-  const [counters, setCounters] = useLocalStorage("adt:counters", [])
+  const { resetAll } = useCountersTools()
+  const { counterBugs, onAddCounterBug } = useCountersBugs()
 
   const reset = () => {
     if (!window.confirm("Are you sure? This will erase all your tools and their counters")) {
       return
     }
 
-    setCounters([])
+    resetAll()
   }
 
   const toggleAffichage = () => {
@@ -24,87 +25,33 @@ function App(props) {
   }
 
   const addBug = () => {
-    props.onAddNewBugCounter("BUG.T")
-  }
-  
-  const onAddNewBugCounter = (bugTypeID) => {
-    setCounters(counters.concat({
-      id: counterAutoIncrement,
-      bug: bugTypeID,
-      hit: 0
-    }))
-
-    setCounterAutoIncrement(counterAutoIncrement + 1)
-  }
-
-  const onAddNewCounter = (toolTypeID) => {
-    setCounters(counters.concat({
-      id: counterAutoIncrement,
-      tool: toolTypeID,
-      hit: 0
-    }))
-
-    setCounterAutoIncrement(counterAutoIncrement + 1)
-  }
-
-  const onHitCounter = (counter, number) => {
-    setCounters(
-      counters.map(
-        c => (
-          c.id === counter.id
-            ? { ...counter, hit: counter.hit + number }
-            : c
-        )
-      )
-    )
-  }
-
-  const resetCounter = (counter) => {
-    setCounters(
-      counters.map(
-        c => (
-          c.id === counter.id
-            ? { ...counter, hit: 0 }
-            : c
-        )
-      )
-    )
-  }
-
-  const removeCounter = (counter) => {
-    setCounters(
-      counters.filter(
-        c => c.id !== counter.id
-      )
-    )
+    onAddCounterBug()
   }
 
   return (
     <div className="App">
       <header className="App--header">
-        <h1 className="App--title"><FormattedMessage id="INTERFACE.TITLE"/></h1>
+        <h1 className="App--title"><FormattedMessage id="INTERFACE.TITLE" /></h1>
       </header>
 
-      <button onClick={toggleAffichage}><FormattedMessage id="INTERFACE.SHOW.TOOLS"/></button>
-      <button onClick={addBug}><FormattedMessage id="INTERFACE.SHOW.TOOLS"/></button>
-      
-      {condition && (
-        <ToolCategories
-          onAddNewCounter={onAddNewCounter}
-        />
-      )}
+      <main className="App--main">
+        <button onClick={toggleAffichage}><FormattedMessage id="INTERFACE.SHOW.TOOLS" /></button>
+        {!counterBugs.enabled && <button onClick={addBug}>add.bug</button>}
 
-      <Counters
-        counters={counters}
-        onHit={onHitCounter}
-        reset={resetCounter}
-        remove={removeCounter}
-      />
+        {condition && (
+          <ToolCategories
+          />
+        )}
+
+        <CountersTool />
+
+        {counterBugs.enabled && <CountersBug />}
 
 
-      <button onClick={reset}><FormattedMessage id="INTERFACE.RESET_ALL" /></button>
+        <button onClick={reset}><FormattedMessage id="INTERFACE.RESET_ALL" /></button>
+      </main>
 
-      <div class="footer">
+      <div className="footer">
         <p>Created by Ktouktou and Saming, Follow us on <a href="https://www.twitter.com/ktouktou">Twitter</a></p>
         <p>
           Research by Alby (

@@ -1,9 +1,12 @@
 import React from "react"
 import { FormattedMessage } from "react-intl"
 import { ToolCategoryList, ToolList } from "../../model"
+import { useCountersTools } from "../../contexts/counters-tools"
 import "./style.css"
 
-export default function ToolCategories(props) {
+export default function ToolCategories() {
+  const { onAddNewCounterTool } = useCountersTools();
+
   return (
     <div className="ToolCategories">
       {ToolCategoryList.map(category => {
@@ -17,7 +20,7 @@ export default function ToolCategories(props) {
             <ul>
               {tools.map(type => {
                 const onClick = () => {
-                  props.onAddNewCounter(type.id)
+                  onAddNewCounterTool(type.id)
                 }
 
                 return (

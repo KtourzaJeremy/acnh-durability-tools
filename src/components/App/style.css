@@ -1,5 +1,7 @@
 .App{
-  margin-bottom:100px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .App--header {
@@ -8,6 +10,10 @@
   background-size: 240px 240px;
   margin-bottom: 20px;
   box-shadow: 0 0 10px #CCC;
+}
+
+.App--main {
+  flex: 1;
 }
 
 .App--title {
@@ -29,10 +35,6 @@ button:hover {
 }
 
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
   padding: 8px 30px 8px 30px;
   background-image: url("/pattern.jpg");
   background-size: 240px 240px;

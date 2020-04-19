@@ -3,12 +3,18 @@ import ReactDOM from 'react-dom';
 import Intl from './intl';
 import './global.css';
 import App from './components/App';
+import { CounterToolsProvider } from "./contexts/counters-tools"
+import { CounterBugsProvider } from "./contexts/counters-bugs"
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
     <Intl>
-      <App />
+      <CounterToolsProvider>
+        <CounterBugsProvider>
+          <App />
+        </CounterBugsProvider>
+      </CounterToolsProvider>
     </Intl>
   </React.StrictMode>,
   document.getElementById('root')
