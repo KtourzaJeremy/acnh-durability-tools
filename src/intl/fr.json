@@ -1,0 +1,100 @@
+{
+  "INTERFACE.TITLE": "Durabilité des outils dans ACNH",
+  "INTERFACE.SHOW.TOOLS": "Afficher / Cacher tous les outils",
+  "INTERFACE.RESET": "Réinitilialiser",
+  "INTERFACE.RESET.CUSTOMIZABLE": "Réinitialiser avec la personalisation",
+  "INTERFACE.REMOVE": "Détruire l'outil ?",
+  "INTERFACE.RESET_ALL": "Supprimer tout votre inventaire",
+
+  "CATEGORY.FILET": "Filets",
+  "CATEGORY.PECHE": "Cannes à pêche",
+  "CATEGORY.HACHE": "Haches",
+  "CATEGORY.PELLE": "Pelles",
+  "CATEGORY.LANCEPIERRE": "Lance-pierres",
+  "CATEGORY.ARROSOIR": "Arrosoirs",
+
+  "TYPE.FILET.RUDIMENTAIRE": "Filet rudimentaire",
+  "TYPE.FILET.NORMAL": "Filet",
+  "TYPE.FILET.GOLD": "Filet en or",
+
+  "TYPE.PECHE.RUDIMENTAIRE": "Canne à pêche rudimentaire",
+  "TYPE.PECHE.NORMAL": "Canne à pêche",
+  "TYPE.PECHE.GOLD": "Canne à pêche en or",
+
+  "TYPE.HACHE.RUDIMENTAIRE": "Hache rudimentaire",
+  "TYPE.HACHE.NORMAL": "Hache",
+  "TYPE.HACHE.PIERRE": "Hache en pierre",
+  "TYPE.HACHE.GOLD": "Hache en or",
+
+  "TYPE.PELLE.RUDIMENTAIRE": "Pelle rudimentaire",
+  "TYPE.PELLE.NORMAL": "Pelle",
+  "TYPE.PELLE.GOLD": "Pelle en or",
+
+  "TYPE.LANCEPIERRE.NORMAL": "Lance-pierre",
+  "TYPE.LANCEPIERRE.GOLD": "Lance-pierre en or",
+
+  "TYPE.ARROSOIR.RUDIMENTAIRE": "Arrosoir rudimentaire",
+  "TYPE.ARROSOIR.NORMAL": "Arrosoir",
+  "TYPE.ARROSOIR.GOLD": "Arrosoir en or",
+
+  "LOSS.HACHE.PELLE.1": "Taper des Rochers",
+  "LOSS.BREAK.HACHE.2": "Taper des Arbres",
+  "LOSS.HACHE.3": "Manger un Fruit + Détruire des Rochers",
+
+  "LOSS.PELLE.2": "Déterrer des objets",
+  "LOSS.PELLE.3": "Déterrer des Fleurs, des Arbres, des mauvaises herbes, etc.",
+  "LOSS.PELLE.4": "Manger un Fruit + Détruire des Rochers / Déraciner des Arbres",
+
+  "NOLOSS.HACHE.PELLE.1": "Taper dans l'air, un joueur ou un villageois",
+  "NOLOSS.HACHE.2": "Taper des objets qui ne sont pas des Rochers ou des Arbres",
+  "NOLOSS.PELLE.2": "Taper des objets qui ne sont pas des Rochers",
+  "NOLOSS.PELLE.3": "Creuser des trous",
+  "NOLOSS.PELLE.4": "Remplir des trous",
+  "NOLOSS.PELLE.5": "Enterrer des objets",
+
+  "BREAK.HACHE.PELLE.1": "Taper des Rochers et aucun objet n'est apparu",
+  "BREAK.PELLE.2": "Déterrer des objets, des Fleurs, des Arbres, des mauvaises herbes, etc.",
+
+  "EXCEPT.HACHE.PELLE.1": "Ne se cassera pas si on frappe des Rochers et qu'un objet apparaît",
+  "EXCEPT.HACHE.2": "Ne se cassera pas si vous mangez un Fruit pour détruire des Rochers",
+  "EXCEPT.PELLE.2": "Ne se cassera pas si vous mangez un Fruit pour détruire des Rochers / Déraciner des Arbres",
+
+  "LOSS.BREAK.FILET": "Captures réussies (Insectes, Fleurs de Cerisier)",
+  "NOLOSS.FILET": "Taper tout ce qui ne peut être attrapé",
+
+  "LOSS.BREAK.PECHE": "Captures réussies (Poissons, Déchêts, Pierres)",
+  "NOLOSS.PECHE.1": "Lancer sa canne",
+  "NOLOSS.PECHE.2": "Ne pas réussir à lancer sa canne",
+  "NOLOSS.PECHE.3": "Rater une capture",
+
+  "LOSS.BREAK.LANCEPIERRE": "Éclater des Ballons*",
+  "NOLOSS.LANCEPIERRE": "Manquer un tir",
+  "EXCEPT.LANCEPIERRE": "* Si vous éclatez des Ballons où le Cadeau tombe dans l'eau ou disparaît fait tout de même diminuer la durabilité",
+
+  "LOSS.BREAK.ARROSOIR.1": "Arroser des Fleurs sèches*",
+  "LOSS.BREAK.ARROSOIR.2": "Arroser une zone sans Fleurs**",
+  "NOLOSS.ARROSOIR": "Arroser des Fleurs déjà arrosées",
+  "EXCEPT.ARROSOIR.1": "* Arroser plusieurs Fleurs avec une seule utilisation coûte une seule durabilité",
+  "EXCEPT.ARROSOIR.2": "** Coûte 1/20 de durabilité",
+
+  "BUG.T.":"Tarentule",
+  "BUG.S":"Scorpion",
+
+  "MONTH.JAN":"Janvier",
+  "MONTH.FEB":"Février",
+  "MONTH.MAR":"Mars",
+  "MONTH.APR":"Avril",
+  "MONTH.MAY":"Mai",
+  "MONTH.JUN":"Juin",
+  "MONTH.JUL":"Juillet",
+  "MONTH.AUG":"Août",
+  "MONTH.SEP":"Septembre",
+  "MONTH.OCT":"Octobre",
+  "MONTH.NOV":"Novembre",
+  "MONTH.DEC":"Décembre",
+
+  "HOURS.NIGHT":"19H - 04H",
+
+
+  "END":"End"
+}

@@ -1,0 +1,99 @@
+{
+  "INTERFACE.TITLE": "ACNH Durability Tools",
+  "INTERFACE.SHOW.TOOLS": "Show / Hide all tools",
+  "INTERFACE.RESET": "Reset",
+  "INTERFACE.RESET.CUSTOMIZABLE": "Customize it to reset",
+  "INTERFACE.REMOVE": "Break the tool ?",
+  "INTERFACE.RESET_ALL": "Erase all your inventory",
+
+  "CATEGORY.FILET": "Nets",
+  "CATEGORY.PECHE": "Fishing rods",
+  "CATEGORY.HACHE": "Axes",
+  "CATEGORY.PELLE": "Shovels",
+  "CATEGORY.LANCEPIERRE": "Slingshots",
+  "CATEGORY.ARROSOIR": "Watering cans",
+
+  "TYPE.FILET.RUDIMENTAIRE": "Flimsy net",
+  "TYPE.FILET.NORMAL": "Net",
+  "TYPE.FILET.GOLD": "Golden net",
+
+  "TYPE.PECHE.RUDIMENTAIRE": "Flimsy fishing rod",
+  "TYPE.PECHE.NORMAL": "Fishing rod",
+  "TYPE.PECHE.GOLD": "Fishing rod en or",
+
+  "TYPE.HACHE.RUDIMENTAIRE": "Flimsy axe",
+  "TYPE.HACHE.NORMAL": "Axe",
+  "TYPE.HACHE.PIERRE": "Hache en pierre",
+  "TYPE.HACHE.GOLD": "Golden axe",
+
+  "TYPE.PELLE.RUDIMENTAIRE": "Flimsy shovel",
+  "TYPE.PELLE.NORMAL": "Shovel",
+  "TYPE.PELLE.GOLD": "Golden shovel",
+
+  "TYPE.LANCEPIERRE.NORMAL": "Slingshot",
+  "TYPE.LANCEPIERRE.GOLD": "Golden slingshot",
+
+  "TYPE.ARROSOIR.RUDIMENTAIRE": "Flimsy watering can",
+  "TYPE.ARROSOIR.NORMAL": "Watering can",
+  "TYPE.ARROSOIR.GOLD": "Golden watering can",
+
+  "LOSS.HACHE.PELLE.1": "Hitting Rocks",
+  "LOSS.BREAK.HACHE.2": "Hitting Trees",
+  "LOSS.HACHE.3": "Fruit Boost + Destroy Rocks",
+
+  "LOSS.PELLE.2": "Digging up objects",
+  "LOSS.PELLE.3": "Digging up Flowers, Trees, Weeds, etc.",
+  "LOSS.PELLE.4": "Fruit Boost + Destroy Rocks / Uproot Trees",
+
+  "NOLOSS.HACHE.PELLE.1": "Hitting the air, a player or a villager",
+  "NOLOSS.HACHE.2": "Hitting objects that aren't Rocks or Trees",
+  "NOLOSS.PELLE.2": "Hitting objects that aren't Rocks",
+  "NOLOSS.PELLE.3": "Digging holes",
+  "NOLOSS.PELLE.4": "Filling in holes",
+  "NOLOSS.PELLE.5": "Burying objects",
+
+  "BREAK.HACHE.PELLE.1": "Hitting Rocks and no item appears",
+  "BREAK.PELLE.2": "Digging up objects, Flowers, Trees, Weeds, ect.",
+
+  "EXCEPT.HACHE.PELLE.1": "Won't break if hitting rocks and an item appears",
+  "EXCEPT.HACHE.2": "Won't break if Fruit Boost is used to Destroy Rocks",
+  "EXCEPT.PELLE.2": "Won't break if Fruit Boost is used to Destroy Rocks / Uproot Trees",
+
+  "LOSS.BREAK.FILET": "Successful catches (Bugs, Cherry Blossoms)",
+  "NOLOSS.FILET": "Hitting anything that cannot be caught",
+
+  "LOSS.BREAK.PECHE": "Successful catches (Fishes, Garbage, Stones)",
+  "NOLOSS.PECHE.1": "Casting the rod",
+  "NOLOSS.PECHE.2": "Failing to cast the rod",
+  "NOLOSS.PECHE.3": "Failing to catch something",
+
+  "LOSS.BREAK.LANCEPIERRE": "Popping Balloons*",
+  "NOLOSS.LANCEPIERRE": "Missing a shot",
+  "EXCEPT.LANCEPIERRE": "* Popping Baloons that drop Presents that land in the water or disappear still decreases durability",
+
+  "LOSS.BREAK.ARROSOIR.1": "Watering dry Flowers*",
+  "LOSS.BREAK.ARROSOIR.2": "Watering an area with no Flowers**",
+  "NOLOSS.ARROSOIR": "Watering wet Flowers",
+  "EXCEPT.ARROSOIR.1": "* Watering multiple flowers with 1 use only costs 1 durability",
+  "EXCEPT.ARROSOIR.2": "** Costs 1/20 of a durability",
+
+  "BUG.T":"Tarantula",
+  "BUG.S":"Scorpion",
+
+  "MONTH.JAN":"January",
+  "MONTH.FEB":"February",
+  "MONTH.MAR":"March",
+  "MONTH.APR":"April",
+  "MONTH.MAY":"May",
+  "MONTH.JUN":"June",
+  "MONTH.JUL":"Juillet",
+  "MONTH.AUG":"August",
+  "MONTH.SEP":"September",
+  "MONTH.OCT":"October",
+  "MONTH.NOV":"November",
+  "MONTH.DEC":"December",
+
+  "HOURS.NIGHT":"7 PM - 4 AM",
+
+  "END":"End"
+}
