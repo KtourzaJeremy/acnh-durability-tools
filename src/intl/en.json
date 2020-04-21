@@ -1,6 +1,9 @@
 {
   "INTERFACE.TITLE": "ACNH Durability Tools",
-  "INTERFACE.SHOW.TOOLS": "Show / Hide all tools",
+  "INTERFACE.SHOW.TOOLS": "Show all tools",
+  "INTERFACE.HIDE.TOOLS": "Hide all tools",
+  "INTERFACE.SHOW.BUGS.TS": "Show Tarantula / Scorpion counter",
+  "INTERFACE.HIDE.BUGS.TS": "Hide Tarantula / Scorpion counter",
   "INTERFACE.RESET": "Reset",
   "INTERFACE.RESET.CUSTOMIZABLE": "Customize it to reset",
   "INTERFACE.REMOVE": "Break the tool ?",

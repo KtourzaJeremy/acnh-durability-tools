@@ -14,7 +14,7 @@ export default function ToolCategories() {
 
         return (
           <div className="ToolCategory" key={category.id}>
-            <img src={category.image} />
+            <img src={category.image} alt={category.id}/>
             <p><FormattedMessage id={category.id} /></p>
 
             <ul>

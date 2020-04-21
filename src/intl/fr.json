@@ -1,9 +1,13 @@
 {
   "INTERFACE.TITLE": "Durabilité des outils dans ACNH",
-  "INTERFACE.SHOW.TOOLS": "Afficher / Cacher tous les outils",
+  "INTERFACE.SHOW.TOOLS": "Afficher tous les outils",
+  "INTERFACE.HIDE.TOOLS": "Cacher tous les outils",
+  "INTERFACE.SHOW.BUGS.TS": "Afficher le compteur de Tarentule / Scorpion",
+  "INTERFACE.HIDE.BUGS.TS": "Cacher le compteur de Tarentule / Scorpion",
   "INTERFACE.RESET": "Réinitilialiser",
-  "INTERFACE.RESET.CUSTOMIZABLE": "Réinitialiser avec la personalisation",
+  "INTERFACE.RESET.CUSTOMIZABLE": "Personnaliser",
   "INTERFACE.REMOVE": "Détruire l'outil ?",
+  "INTERFACE.UPGRADE": "Améliorer",
   "INTERFACE.RESET_ALL": "Supprimer tout votre inventaire",
 
   "CATEGORY.FILET": "Filets",
@@ -77,7 +81,7 @@
   "EXCEPT.ARROSOIR.1": "* Arroser plusieurs Fleurs avec une seule utilisation coûte une seule durabilité",
   "EXCEPT.ARROSOIR.2": "** Coûte 1/20 de durabilité",
 
-  "BUG.T.":"Tarentule",
+  "BUG.T":"Tarentule",
   "BUG.S":"Scorpion",
 
   "MONTH.JAN":"Janvier",

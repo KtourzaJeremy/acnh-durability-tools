@@ -65,6 +65,13 @@ export function CounterToolsProvider(props) {
     )
   }
 
+  const upgradeCounterFlimsyTool = (counter,upgradetool) => {
+    updateCounter(
+      counter.id,
+      { hit: 0, tool: upgradetool }
+    )
+  }
+
   return (
     <CounterToolsContext.Provider value={{
       countersTools: counters,
@@ -72,6 +79,7 @@ export function CounterToolsProvider(props) {
       onHitCounterTool,
       resetCounterTool,
       upgradeCounterTool,
+      upgradeCounterFlimsyTool,
       removeCounterTool,
       resetAll
     }}>

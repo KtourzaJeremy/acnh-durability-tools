@@ -5,12 +5,13 @@ import { useCountersBugs } from "../../contexts/counters-bugs"
 import ToolCategories from "../ToolCategories"
 import CountersTool from "../CountersTool"
 import CountersBug from "../CountersBug"
+import Icon from "../Icon"
 import './style.css';
 
 function App(props) {
   const [condition, setCondition] = useState(true)
   const { resetAll } = useCountersTools()
-  const { counterBugs, onAddCounterBug } = useCountersBugs()
+  const { counterBugs, onAddCounterBug, removeBug } = useCountersBugs()
 
   const reset = () => {
     if (!window.confirm("Are you sure? This will erase all your tools and their counters")) {
@@ -35,20 +36,21 @@ function App(props) {
       </header>
 
       <main className="App--main">
-        <button onClick={toggleAffichage}><FormattedMessage id="INTERFACE.SHOW.TOOLS" /></button>
-        {!counterBugs.enabled && <button onClick={addBug}>add.bug</button>}
-
+        <div className="headerButtons">
+          {!condition && <button onClick={toggleAffichage}><Icon className="icon" name="visibility"/><br/><FormattedMessage id="INTERFACE.SHOW.TOOLS" /></button>}
+          {condition && <button onClick={toggleAffichage}><Icon name="visibility_off"/><br/><FormattedMessage id="INTERFACE.HIDE.TOOLS" /></button>}
+          {!counterBugs.enabled && <button onClick={addBug}><Icon name="bug_report"/><br/><FormattedMessage id="INTERFACE.SHOW.BUGS.TS"/></button>}
+          {counterBugs.enabled && <button onClick={removeBug}><Icon name="bug_report"/><br/><FormattedMessage id="INTERFACE.HIDE.BUGS.TS"/></button>}
+          <button onClick={reset}><Icon name="delete_forever"/><br/><FormattedMessage id="INTERFACE.RESET_ALL" /></button>
+        </div>
+        
         {condition && (
           <ToolCategories
           />
         )}
 
-        <CountersTool />
-
         {counterBugs.enabled && <CountersBug />}
-
-
-        <button onClick={reset}><FormattedMessage id="INTERFACE.RESET_ALL" /></button>
+        <CountersTool />
       </main>
 
       <div className="footer">

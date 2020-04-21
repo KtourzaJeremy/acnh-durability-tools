@@ -7,7 +7,7 @@
   --color-button: #DDD;
   --color-button-hover: #CCC;
 
-  --size-border-radius: 6px;
+  --size-border-radius: 15px;
 }
 
 *,
@@ -22,6 +22,7 @@ html,
 button,
 input {
   font-family: var(--font);
+  font-weight: bold;
 }
 
 html {

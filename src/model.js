@@ -106,6 +106,7 @@ export const ToolList = [
     category: "CATEGORY.FILET",
     image: img_net,
     customizable: true,
+    upgrade: "TYPE.FILET.GOLD",
     durability: 30
   },
   {
@@ -120,6 +121,7 @@ export const ToolList = [
     category: "CATEGORY.PECHE",
     image: img_fishing_rod_flimsy,
     customizable: false,
+    upgrade: "TYPE.PECHE.NORMAL",
     durability: 10
   },
   {
@@ -127,6 +129,7 @@ export const ToolList = [
     category: "CATEGORY.PECHE",
     image: img_fishing_rod,
     customizable: true,
+    upgrade: "TYPE.PECHE.GOLD",
     durability: 30
   },
   {
@@ -142,6 +145,7 @@ export const ToolList = [
     image: img_axe_flimsy,
     customizable: false,
     durability: 40,
+    upgrade: ["TYPE.HACHE.PIERRE","TYPE.HACHE.NORMAL"],
     hits: 3
   },
   {
@@ -242,7 +246,7 @@ export const BugsList = [
     hours: "HOURS.NIGHT",
     image: img_watering_can_golden,
     price: 8000,
-    djason: 12000,
+    flick: 12000,
     space: "SPACE.FLOOR"
   },
   {
@@ -252,7 +256,7 @@ export const BugsList = [
     hours: "HOURS.NIGHT",
     image: img_watering_can_golden,
     price: 8000,
-    djason: 12000,
+    flick: 12000,
     space: "SPACE.FLOOR"
   }
 ]

@@ -1,28 +1,31 @@
 import React from "react"
 import { FormattedMessage } from "react-intl"
-import { BugsList } from "../../model"
 import { useCountersBugs } from "../../contexts/counters-bugs"
 import Icon from "../Icon"
 import "./style.css"
 
+import img_tarantula from "../../img/bugs/tarantula.png"
+import img_scorpion from "../../img/bugs/scorpion.png"
+import img_bellbag from "../../img/icons/BellBag.png"
+import img_flick from "../../img/icons/Flick.png"
+
 export default function CountersBug(props) {
   const { counterBugs,
-    onAddCounterBug,
     onIncrementBug,
-    resetCounterBug,
-    removeBug } = useCountersBugs()
+    resetCounterBug } = useCountersBugs()
+  const minuslimit = counterBugs.number === 0
 
   return (
     <div className="CounterBug">
       <div>
-        {/* ajouter les deux images ici */}
-        {/* <img src={bug.image} /> */}
+        <img className="imgbug" src={img_tarantula} alt="BUG.T"/>
+        <img className="imgbug" src={img_scorpion} alt="BUG.S"/>
       </div>
 
-      <p>{/* ajouter les deux noms ?*/}</p>
+      <h3 className="namebug"><FormattedMessage id={"BUG.T"} /> / <FormattedMessage id={"BUG.S"} /></h3>
 
       <div className="CounterBug--hits">
-        <button onClick={() => onIncrementBug(-1)}>
+        <button disable={minuslimit} onClick={() => onIncrementBug(-1)}>
           <Icon name="remove_circle" />
         </button>
 
@@ -33,12 +36,19 @@ export default function CountersBug(props) {
         </button>
       </div>
 
-      <button onClick={() => resetCounterBug()}>
-        <FormattedMessage id={"INTERFACE.RESET"} />
-      </button>
+      <div className="CounterBug--prices">
+        <div className="bellbag">
+          <img className="imgbug" src={img_bellbag} alt="BellBag"/>
+          <p>{counterBugs.number*8000}</p>
+        </div>
+        <div className="flick">
+          <img className="imgbug" src={img_flick} alt="Flick"/>
+          <p>{counterBugs.number*12000}</p>
+        </div>
+      </div>
 
-      <button onClick={() => removeBug()}>
-        <FormattedMessage id="INTERFACE.REMOVE" />
+      <button className="reset" onClick={() => resetCounterBug()}>
+        <FormattedMessage id={"INTERFACE.RESET"} />
       </button>
     </div>
   )
