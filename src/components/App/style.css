@@ -24,11 +24,11 @@
 
 button {
   border: none;
+  cursor: pointer;
+/*  
   padding: .2em .5em;
   border-radius: var(--size-border-radius);
   background-color: var(--color-button);
-  cursor: pointer;
-/*  
   transition: background-color 0.2s;
 }
 

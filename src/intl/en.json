@@ -2,8 +2,11 @@
   "INTERFACE.TITLE": "ACNH Durability Tools",
   "INTERFACE.SHOW.TOOLS": "Show all tools",
   "INTERFACE.HIDE.TOOLS": "Hide all tools",
-  "INTERFACE.SHOW.BUGS.TS": "Show Tarantula / Scorpion counter",
-  "INTERFACE.HIDE.BUGS.TS": "Hide Tarantula / Scorpion counter",
+  "INTERFACE.SHOW.BUGS.T": "Show Tarantula counter",
+  "INTERFACE.HIDE.BUGS.T": "Hide Tarantula counter",
+  "INTERFACE.SHOW.BUGS.S": "Show Scorpion counter",
+  "INTERFACE.HIDE.BUGS.S": "Hide Scorpion counter",
+
   "INTERFACE.RESET": "Reset",
   "INTERFACE.RESET.CUSTOMIZABLE": "Customize it to reset",
   "INTERFACE.REMOVE": "Break the tool ?",
@@ -80,8 +83,8 @@
   "EXCEPT.ARROSOIR.1": "* Watering multiple flowers with 1 use only costs 1 durability",
   "EXCEPT.ARROSOIR.2": "** Costs 1/20 of a durability",
 
-  "BUG.T":"Tarantula",
-  "BUG.S":"Scorpion",
+  "BUG.T":"Tarantulas",
+  "BUG.S":"Scorpions",
 
   "MONTH.JAN":"January",
   "MONTH.FEB":"February",
@@ -97,6 +100,9 @@
   "MONTH.DEC":"December",
 
   "HOURS.NIGHT":"7 PM - 4 AM",
+
+  "NORTH":"Northern Hemisphere",
+  "SOUTH":"Southern Hemisphere",
 
   "END":"End"
 }

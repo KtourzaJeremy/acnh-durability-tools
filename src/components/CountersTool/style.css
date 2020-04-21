@@ -45,7 +45,8 @@
 }
 
 .CounterTool--hits > p {
-  margin: 0 1em;
+  min-width: 90px;
+  text-align: center;
 }
 
 .CounterContent {
@@ -128,7 +129,6 @@
   width: 50px;
   height: 50px;
   text-align: center;
-
 }
 
 .btnUpgrade img {
@@ -138,4 +138,13 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.CounterTool--hits button {
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  line-height: 1!important;
+  margin: 0 3px;
+  font-size: 14px;
 }

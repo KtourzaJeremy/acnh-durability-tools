@@ -9,7 +9,8 @@ import Icon from "../Icon"
 import './style.css';
 
 function App(props) {
-  const [condition, setCondition] = useState(true)
+  const [showTools, setshowTools] = useState(true)
+  const [hemishpereNorth, setHemisphere] = useState(true)
   const { resetAll } = useCountersTools()
   const { counterBugs, onAddCounterBug, removeBug } = useCountersBugs()
 
@@ -17,12 +18,15 @@ function App(props) {
     if (!window.confirm("Are you sure? This will erase all your tools and their counters")) {
       return
     }
-
     resetAll()
   }
 
   const toggleAffichage = () => {
-    setCondition(!condition)
+    setshowTools(!showTools)
+  }
+
+  const toggleHemisphere = () => {
+    setHemisphere(!hemishpereNorth)
   }
 
   const addBug = () => {
@@ -37,19 +41,37 @@ function App(props) {
 
       <main className="App--main">
         <div className="headerButtons">
-          {!condition && <button onClick={toggleAffichage}><Icon className="icon" name="visibility"/><br/><FormattedMessage id="INTERFACE.SHOW.TOOLS" /></button>}
-          {condition && <button onClick={toggleAffichage}><Icon name="visibility_off"/><br/><FormattedMessage id="INTERFACE.HIDE.TOOLS" /></button>}
-          {!counterBugs.enabled && <button onClick={addBug}><Icon name="bug_report"/><br/><FormattedMessage id="INTERFACE.SHOW.BUGS.TS"/></button>}
-          {counterBugs.enabled && <button onClick={removeBug}><Icon name="bug_report"/><br/><FormattedMessage id="INTERFACE.HIDE.BUGS.TS"/></button>}
+          {!showTools 
+            ? (<button onClick={toggleAffichage}><Icon className="icon" name="visibility"/><br/><FormattedMessage id="INTERFACE.SHOW.TOOLS" /></button>)
+            : (<button onClick={toggleAffichage}><Icon name="visibility_off"/><br/><FormattedMessage id="INTERFACE.HIDE.TOOLS" /></button>)
+          }
+
+          {!hemishpereNorth 
+            ? (<button onClick={toggleHemisphere}><Icon className="icon" name="public"/><br/><FormattedMessage id="SOUTH"/></button>)
+            : (<button onClick={toggleHemisphere}><Icon name="public"/><br/><FormattedMessage id="NORTH"/></button>)
+          }
+          
+          {!counterBugs.enabled 
+            ? (<button onClick={addBug}><Icon name="bug_report"/><br/>
+                {hemishpereNorth
+                    ? (<FormattedMessage id="INTERFACE.SHOW.BUGS.T"/>)
+                    : (<FormattedMessage id="INTERFACE.SHOW.BUGS.S"/>)}
+              </button>)
+            :(<button onClick={removeBug}><Icon name="bug_report"/><br/>
+                {hemishpereNorth
+                    ? (<FormattedMessage id="INTERFACE.HIDE.BUGS.T"/>)
+                    : (<FormattedMessage id="INTERFACE.HIDE.BUGS.S"/>)}
+              </button>)
+          }
           <button onClick={reset}><Icon name="delete_forever"/><br/><FormattedMessage id="INTERFACE.RESET_ALL" /></button>
         </div>
         
-        {condition && (
+        {showTools && (
           <ToolCategories
           />
         )}
 
-        {counterBugs.enabled && <CountersBug />}
+        {counterBugs.enabled && <CountersBug hemishpereNorth={hemishpereNorth} />}
         <CountersTool />
       </main>
 

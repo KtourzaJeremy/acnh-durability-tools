@@ -46,13 +46,13 @@ export default function CountersTool(props) {
                 )}
 
                 <button disabled={minuslimit} onClick={() => onHit(counter, -1)}>
-                  <Icon name="remove_circle" />
+                  <Icon name="remove" />
                 </button>
 
                 <p>{counter.hit} / {tool.durability}</p>
 
                 <button disabled={pluslimit} onClick={() => onHit(counter, 1)}>
-                  <Icon name="add_circle" />
+                  <Icon name="add" />
                 </button>
 
                 {tool.hits > 1 && (
