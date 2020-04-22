@@ -7,6 +7,7 @@ import CountersTool from "../CountersTool";
 import CountersBug from "../CountersBug";
 import Icon from "../Icon";
 import "./style.css";
+import "./semantic-ui.css";
 
 function App(props) {
   const [showTools, setshowTools] = useState(true);

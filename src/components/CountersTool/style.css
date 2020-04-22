@@ -17,7 +17,6 @@
   border-radius: var(--size-border-radius);
   background-color: #e7dcb1;
   color: #795738;
-  -moz-box-shadow: 6px 9px 12px -8px rgba(0, 0, 0, 0.47);
   box-shadow: 6px 9px 12px -8px rgba(0, 0, 0, 0.47);
   transition: 1s;
 }
@@ -85,8 +84,6 @@
   text-align: center;
   border-radius: 2em;
   border: 3px solid #e7dcb1;
-  -moz-transition: #0cbeb2 3s ease-out;
-  -o-transition: #0cbeb2 3s ease-out;
   transition: #0cbeb2 3s ease-out;
 }
 
@@ -101,7 +98,6 @@
     #0cbeb2 14px /* determines size */
   );
   background-size: 200px 200px; /* This is unique for this background, need to find a pattern and develop a formula */
-  -moz-animation: slide 5s infinite linear forwards;
   animation: slide 5s infinite linear forwards;
 }
 

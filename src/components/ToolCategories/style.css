@@ -65,7 +65,6 @@
   background-color: #587cd2;
   border: 3px solid #b9d8f7;
   margin: 8px 0;
-  -o-transition: #587cd2 1s ease-out;
   transition: #587cd2 1s ease-out;
 }
 
