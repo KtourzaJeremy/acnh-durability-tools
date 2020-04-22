@@ -1,11 +1,11 @@
 :root {
-  --font: 'Nunito', sans-serif;
+  --font: "Nunito", sans-serif;
 
-  --color-background: #FBFBFB;
+  --color-background: #fbfbfb;
   --color-text: #444;
-  --color-border: #CCC;
-  --color-button: #DDD;
-  --color-button-hover: #CCC;
+  --color-border: #ccc;
+  --color-button: #ddd;
+  --color-button-hover: #ccc;
 
   --size-border-radius: 15px;
 }
@@ -30,4 +30,5 @@ html {
   -moz-osx-font-smoothing: grayscale;
   background: var(--color-background);
   color: var(--color-text);
+  user-select: none;
 }

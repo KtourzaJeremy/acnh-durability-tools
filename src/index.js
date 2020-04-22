@@ -1,11 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Intl from './intl';
-import './global.css';
-import App from './components/App';
-import { CounterToolsProvider } from "./contexts/counters-tools"
-import { CounterBugsProvider } from "./contexts/counters-bugs"
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import Intl from "./intl";
+import "./global.css";
+import App from "./components/App";
+import { CounterToolsProvider } from "./contexts/counters-tools";
+import { CounterBugsProvider } from "./contexts/counters-bugs";
+import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,7 +17,7 @@ ReactDOM.render(
       </CounterToolsProvider>
     </Intl>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

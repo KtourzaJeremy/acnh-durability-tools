@@ -1,56 +1,58 @@
-import React, { createContext, useContext } from "react"
-import useLocalStorage from "../hooks/local-storage"
+import React, { createContext, useContext } from "react";
+import useLocalStorage from "../hooks/local-storage";
 
-const CounterBugsContext = createContext({})
+const CounterBugsContext = createContext({});
 
 export function CounterBugsProvider(props) {
   const [counter, setCounter] = useLocalStorage("adt:counters-bug", {
-    enabled: false
-  })
+    enabled: false,
+  });
 
   const onAddCounterBug = () => {
     if (counter.enabled === true) {
-      return
+      return;
     }
 
-    resetCounterBug()
-  }
+    resetCounterBug();
+  };
 
   const onIncrementBug = (number) => {
     setCounter({
       enabled: true,
       previous: counter.number,
-      number: counter.number + number
-    })
-  }
+      number: counter.number + number,
+    });
+  };
 
   const resetCounterBug = (counter) => {
     setCounter({
       enabled: true,
       number: 0,
       previous: 0,
-    })
-  }
+    });
+  };
 
   const removeBug = () => {
     setCounter({
-      enabled: false
-    })
-  }
+      enabled: false,
+    });
+  };
 
   return (
-    <CounterBugsContext.Provider value={{
-      counterBugs: counter,
-      onAddCounterBug,
-      onIncrementBug,
-      resetCounterBug,
-      removeBug
-    }}>
+    <CounterBugsContext.Provider
+      value={{
+        counterBugs: counter,
+        onAddCounterBug,
+        onIncrementBug,
+        resetCounterBug,
+        removeBug,
+      }}
+    >
       {props.children}
     </CounterBugsContext.Provider>
-  )
+  );
 }
 
 export function useCountersBugs() {
-  return useContext(CounterBugsContext)
+  return useContext(CounterBugsContext);
 }

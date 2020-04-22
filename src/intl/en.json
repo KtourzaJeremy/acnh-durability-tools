@@ -84,26 +84,26 @@
   "EXCEPT.ARROSOIR.1": "* Watering multiple flowers with 1 use only costs 1 durability",
   "EXCEPT.ARROSOIR.2": "** Costs 1/20 of a durability",
 
-  "BUG.T":"Tarantulas",
-  "BUG.S":"Scorpions",
+  "BUG.T": "Tarantulas",
+  "BUG.S": "Scorpions",
 
-  "MONTH.JAN":"January",
-  "MONTH.FEB":"February",
-  "MONTH.MAR":"March",
-  "MONTH.APR":"April",
-  "MONTH.MAY":"May",
-  "MONTH.JUN":"June",
-  "MONTH.JUL":"Juillet",
-  "MONTH.AUG":"August",
-  "MONTH.SEP":"September",
-  "MONTH.OCT":"October",
-  "MONTH.NOV":"November",
-  "MONTH.DEC":"December",
+  "MONTH.JAN": "January",
+  "MONTH.FEB": "February",
+  "MONTH.MAR": "March",
+  "MONTH.APR": "April",
+  "MONTH.MAY": "May",
+  "MONTH.JUN": "June",
+  "MONTH.JUL": "Juillet",
+  "MONTH.AUG": "August",
+  "MONTH.SEP": "September",
+  "MONTH.OCT": "October",
+  "MONTH.NOV": "November",
+  "MONTH.DEC": "December",
 
-  "HOURS.NIGHT":"7 PM - 4 AM",
+  "HOURS.NIGHT": "7 PM - 4 AM",
 
-  "NORTH":"Northern Hemisphere",
-  "SOUTH":"Southern Hemisphere",
+  "NORTH": "Northern Hemisphere",
+  "SOUTH": "Southern Hemisphere",
 
-  "END":"End"
+  "END": "End"
 }

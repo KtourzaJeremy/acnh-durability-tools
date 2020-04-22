@@ -16,22 +16,21 @@
   border: 8px solid #f2f1e2;
   border-radius: var(--size-border-radius);
   background-color: #e7dcb1;
-  color:#795738;
-  -webkit-box-shadow: 6px 9px 12px -8px rgba(0,0,0,0.47);
-  -moz-box-shadow: 6px 9px 12px -8px rgba(0,0,0,0.47);
-  box-shadow: 6px 9px 12px -8px rgba(0,0,0,0.47);
+  color: #795738;
+  -moz-box-shadow: 6px 9px 12px -8px rgba(0, 0, 0, 0.47);
+  box-shadow: 6px 9px 12px -8px rgba(0, 0, 0, 0.47);
   transition: 1s;
 }
 
 .CounterTool h3 {
   border-bottom: 2px dashed #795738;
-  margin: 2px 0 0 0!important;
+  margin: 2px 0 0 0 !important;
   padding: 0 12px 0 12px;
   font-size: 1.1em;
 }
 
 .CounterContent > :not(:last-child) {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .CounterContent img {
@@ -51,7 +50,7 @@
 }
 
 .almostBroken {
-  color:red;
+  color: red;
   transform: rotate(1deg) scale(1.05);
 }
 .almostBroken p {
@@ -78,48 +77,57 @@
   background: #0cbeb2;
   padding: 0.6em 1.3em;
   margin: 0 5px 0 5px;
-  font-size: .9em;
+  font-size: 0.9em;
   color: white;
   text-decoration: none;
-  text-shadow: -1px 1px 2px darkslategray; 
+  text-shadow: -1px 1px 2px darkslategray;
   flex-grow: 1;
   text-align: center;
   border-radius: 2em;
   border: 3px solid #e7dcb1;
-  -webkit-transition: #0cbeb2 3s ease-out;  
-  -moz-transition: #0cbeb2 3s ease-out;  
-  -o-transition: #0cbeb2 3s ease-out;  
+  -moz-transition: #0cbeb2 3s ease-out;
+  -o-transition: #0cbeb2 3s ease-out;
   transition: #0cbeb2 3s ease-out;
- }
+}
 
- .button-area button:hover {
+.button-area button:hover {
   border: 3px solid #61d5c3;
-  background-position-x:200px;  
-  background: 
-    repeating-linear-gradient(
-      135deg,
-      #0da89d,
-      #0da89d 7px,
-      #0cbeb2 7px,
-      #0cbeb2 14px /* determines size */
-    );
-    background-size: 200px 200px; /* This is unique for this background, need to find a pattern and develop a formula */
-    -webkit-animation: slide 5s infinite linear forwards;
-    -moz-animation: slide 5s infinite linear forwards;
-    animation: slide 5s infinite linear forwards;
- }
+  background-position-x: 200px;
+  background: repeating-linear-gradient(
+    135deg,
+    #0da89d,
+    #0da89d 7px,
+    #0cbeb2 7px,
+    #0cbeb2 14px /* determines size */
+  );
+  background-size: 200px 200px; /* This is unique for this background, need to find a pattern and develop a formula */
+  -moz-animation: slide 5s infinite linear forwards;
+  animation: slide 5s infinite linear forwards;
+}
 
- @-webkit-keyframes slide {
-  0% { background-position: 100% 0; }
-  100% { background-position: 0% 0; }
+@-webkit-keyframes slide {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0% 0;
+  }
 }
 @-moz-keyframes slide {
-  0% { background-position: 100% 0; }
-  100% { background-position: 0% 0; }
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0% 0;
+  }
 }
 @keyframes slide {
-  0% { background-position: 100% 0; }
-  100% { background-position: 0% 0; }
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0% 0;
+  }
 }
 
 .removeBtn {
@@ -134,7 +142,7 @@
   border-top-right-radius: 0;
   transition-duration: 0.5s;
   background-color: white;
-  font-size: 12px!important;
+  font-size: 12px !important;
 }
 
 .removeBtn:hover {
@@ -143,15 +151,15 @@
 }
 
 .removeBtn:active {
-  transform: scale(1)!important;
+  transform: scale(1) !important;
 }
 
-.Popup h4{
-  font-size: 16px!important;
+.Popup h4 {
+  font-size: 16px !important;
   color: white;
   text-align: center;
-  margin:0!important;
-  padding:0!important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .btnUpgrade {
@@ -186,9 +194,9 @@
   border-radius: 100%;
   width: 35px;
   height: 35px;
-  line-height: 1!important;
+  line-height: 1 !important;
   margin: 0 3px;
   font-size: 14px;
-  color:#8c7d68;
+  color: #8c7d68;
   background-color: #f5f7df;
 }

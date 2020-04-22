@@ -6,7 +6,7 @@
   "INTERFACE.HIDE.BUGS.T": "Cacher le compteur de Tarentule",
   "INTERFACE.SHOW.BUGS.S": "Afficher le compteur de Scorpion",
   "INTERFACE.HIDE.BUGS.S": "Cacher le compteur de Scorpion",
-  
+
   "INTERFACE.RESET": "Réinitilialiser",
   "INTERFACE.RESET.BUG": "Tout vendre",
   "INTERFACE.RESET.CUSTOMIZABLE": "Personnaliser",
@@ -85,26 +85,26 @@
   "EXCEPT.ARROSOIR.1": "* Arroser plusieurs Fleurs avec une seule utilisation coûte une seule durabilité",
   "EXCEPT.ARROSOIR.2": "** Coûte 1/20 de durabilité",
 
-  "BUG.T":"Tarentules",
-  "BUG.S":"Scorpions",
+  "BUG.T": "Tarentules",
+  "BUG.S": "Scorpions",
 
-  "MONTH.JAN":"Janvier",
-  "MONTH.FEB":"Février",
-  "MONTH.MAR":"Mars",
-  "MONTH.APR":"Avril",
-  "MONTH.MAY":"Mai",
-  "MONTH.JUN":"Juin",
-  "MONTH.JUL":"Juillet",
-  "MONTH.AUG":"Août",
-  "MONTH.SEP":"Septembre",
-  "MONTH.OCT":"Octobre",
-  "MONTH.NOV":"Novembre",
-  "MONTH.DEC":"Décembre",
+  "MONTH.JAN": "Janvier",
+  "MONTH.FEB": "Février",
+  "MONTH.MAR": "Mars",
+  "MONTH.APR": "Avril",
+  "MONTH.MAY": "Mai",
+  "MONTH.JUN": "Juin",
+  "MONTH.JUL": "Juillet",
+  "MONTH.AUG": "Août",
+  "MONTH.SEP": "Septembre",
+  "MONTH.OCT": "Octobre",
+  "MONTH.NOV": "Novembre",
+  "MONTH.DEC": "Décembre",
 
-  "HOURS.NIGHT":"19H - 04H",
+  "HOURS.NIGHT": "19H - 04H",
 
-  "NORTH":"Hémisphère Nord",
-  "SOUTH":"Hémisphère Sud",
+  "NORTH": "Hémisphère Nord",
+  "SOUTH": "Hémisphère Sud",
 
-  "END":"End"
+  "END": "End"
 }
