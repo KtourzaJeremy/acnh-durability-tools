@@ -42,28 +42,28 @@ function App(props) {
       <main className="App--main">
         <div className="headerButtons">
           {!showTools 
-            ? (<button onClick={toggleAffichage}><Icon className="icon" name="visibility"/><br/><FormattedMessage id="INTERFACE.SHOW.TOOLS" /></button>)
-            : (<button onClick={toggleAffichage}><Icon name="visibility_off"/><br/><FormattedMessage id="INTERFACE.HIDE.TOOLS" /></button>)
+            ? (<button className="tools" onClick={toggleAffichage}><Icon className="icon" name="visibility"/><br/><FormattedMessage id="INTERFACE.SHOW.TOOLS" /></button>)
+            : (<button className="tools" onClick={toggleAffichage}><Icon name="visibility_off"/><br/><FormattedMessage id="INTERFACE.HIDE.TOOLS" /></button>)
           }
 
           {!hemishpereNorth 
-            ? (<button onClick={toggleHemisphere}><Icon className="icon" name="public"/><br/><FormattedMessage id="SOUTH"/></button>)
-            : (<button onClick={toggleHemisphere}><Icon name="public"/><br/><FormattedMessage id="NORTH"/></button>)
+            ? (<button className="hemisphere" onClick={toggleHemisphere}><Icon className="icon" name="public"/><br/><FormattedMessage id="SOUTH"/></button>)
+            : (<button className="hemisphere" onClick={toggleHemisphere}><Icon name="public"/><br/><FormattedMessage id="NORTH"/></button>)
           }
           
           {!counterBugs.enabled 
-            ? (<button onClick={addBug}><Icon name="bug_report"/><br/>
+            ? (<button className="bug" onClick={addBug}><Icon name="bug_report"/><br/>
                 {hemishpereNorth
                     ? (<FormattedMessage id="INTERFACE.SHOW.BUGS.T"/>)
                     : (<FormattedMessage id="INTERFACE.SHOW.BUGS.S"/>)}
               </button>)
-            :(<button onClick={removeBug}><Icon name="bug_report"/><br/>
+            :(<button className="bug" onClick={removeBug}><Icon name="bug_report"/><br/>
                 {hemishpereNorth
                     ? (<FormattedMessage id="INTERFACE.HIDE.BUGS.T"/>)
                     : (<FormattedMessage id="INTERFACE.HIDE.BUGS.S"/>)}
               </button>)
           }
-          <button onClick={reset}><Icon name="delete_forever"/><br/><FormattedMessage id="INTERFACE.RESET_ALL" /></button>
+          <button className="delete" onClick={reset}><Icon name="delete_forever"/><br/><FormattedMessage id="INTERFACE.RESET_ALL" /></button>
         </div>
         
         {showTools && (

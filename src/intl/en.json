@@ -8,7 +8,8 @@
   "INTERFACE.HIDE.BUGS.S": "Hide Scorpion counter",
 
   "INTERFACE.RESET": "Reset",
-  "INTERFACE.RESET.CUSTOMIZABLE": "Customize it to reset",
+  "INTERFACE.RESET.BUG": "Sell it all",
+  "INTERFACE.RESET.CUSTOMIZABLE": "Customize",
   "INTERFACE.REMOVE": "Break the tool ?",
   "INTERFACE.RESET_ALL": "Erase all your inventory",
 

@@ -21,7 +21,6 @@
   color: white;
 }
 
-
 button {
   border: none;
   cursor: pointer;
@@ -29,12 +28,19 @@ button {
   padding: .2em .5em;
   border-radius: var(--size-border-radius);
   background-color: var(--color-button);
-  transition: background-color 0.2s;
 }
 
 button:hover {
   background-color: var(--color-button-hover);
 */}
+
+button:active {
+  transform: scale(0.95);
+}
+button:disabled {
+  transform: scale(1)!important;
+  color:lightgray!important;
+}
 
 .headerButtons {
   display: flex;
@@ -42,7 +48,6 @@ button:hover {
   justify-content: center;
 }
 .headerButtons button {
-  background: #0cbeb2;
   padding: 0.6em 1.3em;
   margin: 0 5px 0 5px;
   max-width: 250px;
@@ -53,25 +58,117 @@ button:hover {
   flex-grow: 1;
   text-align: center;
   border-radius: 4em;
-  border: 3px solid #0cbeb2;
+  border: 4px solid white;
+ }
+
+ .headerButtons .tools {
+  background: #0cbeb2;
   -webkit-transition: #0cbeb2 1s ease-out;  
   -moz-transition: #0cbeb2 1s ease-out;  
   -o-transition: #0cbeb2 1s ease-out;  
   transition: #0cbeb2 1s ease-out;
  }
-
- .headerButtons button:hover {
-  border: 3px solid #61d5c3;
-  background-position-x:200px;  
+ .headerButtons .tools:hover {
+  border: 4px solid #61d5c3;
   background: 
+  repeating-linear-gradient(
+    135deg,
+    #0da89d,
+    #0da89d 7px,
+    #0cbeb2 7px,
+    #0cbeb2 14px /* determines size */
+  );
+  background-position-x:200px;  
+    background-size: 200px 200px; /* This is unique for this background, need to find a pattern and develop a formula */
+    -webkit-animation: slide 5s infinite linear forwards;
+    -moz-animation: slide 5s infinite linear forwards;
+    animation: slide 5s infinite linear forwards;
+  }
+
+  .headerButtons .hemisphere {
+    background: #587cd2;
+    -webkit-transition: #587cd2 1s ease-out;  
+    -moz-transition: #587cd2 1s ease-out;  
+    -o-transition: #587cd2 1s ease-out;  
+    transition: #587cd2 1s ease-out;
+   }
+   .headerButtons .hemisphere:hover {
+    border: 4px solid #7793e6;
+    background: 
     repeating-linear-gradient(
       135deg,
-      #0da89d,
-      #0da89d 7px,
-      #0cbeb2 7px,
-      #0cbeb2 14px /* determines size */
+      #3a64c6,
+      #3a64c6 7px,
+      #4671cf 7px,
+      #4671cf 14px /* determines size */
     );
- }
+    background-position-x:200px;  
+      background-size: 200px 200px; /* This is unique for this background, need to find a pattern and develop a formula */
+      -webkit-animation: slide 5s infinite linear forwards;
+      -moz-animation: slide 5s infinite linear forwards;
+      animation: slide 5s infinite linear forwards;
+    }
+
+    .headerButtons .bug {
+      background: #f7d32e;
+      -webkit-transition: #f7d32e 1s ease-out;  
+      -moz-transition: #f7d32e 1s ease-out;  
+      -o-transition: #f7d32e 1s ease-out;  
+      transition: #f7d32e 1s ease-out;
+     }
+     .headerButtons .bug:hover {
+      border: 4px solid #fffca8;
+      background: 
+      repeating-linear-gradient(
+        135deg,
+        #f4e63f,
+        #f4e63f 7px,
+        #f7d32e 7px,
+        #f7d32e 14px /* determines size */
+      );
+      background-position-x:200px;  
+        background-size: 200px 200px; /* This is unique for this background, need to find a pattern and develop a formula */
+        -webkit-animation: slide 5s infinite linear forwards;
+        -moz-animation: slide 5s infinite linear forwards;
+        animation: slide 5s infinite linear forwards;
+      }
+
+      .headerButtons .delete {
+        background: #ff0000;
+        -webkit-transition: #ff0000 1s ease-out;  
+        -moz-transition: #ff0000 1s ease-out;  
+        -o-transition: #ff0000 1s ease-out;  
+        transition: #ff0000 1s ease-out;
+       }
+       .headerButtons .delete:hover {
+        border: 4px solid #ea7676;
+        background: 
+        repeating-linear-gradient(
+          135deg,
+          #ff0000,
+          #ff0000 7px,
+          #c33939 7px,
+          #c33939 14px /* determines size */
+        );
+        background-position-x:200px;  
+          background-size: 200px 200px; /* This is unique for this background, need to find a pattern and develop a formula */
+          -webkit-animation: slide 5s infinite linear forwards;
+          -moz-animation: slide 5s infinite linear forwards;
+          animation: slide 5s infinite linear forwards;
+        }
+
+@-webkit-keyframes slide {
+  0% { background-position: 100% 0; }
+  100% { background-position: 0% 0; }
+}
+@-moz-keyframes slide {
+  0% { background-position: 100% 0; }
+  100% { background-position: 0% 0; }
+}
+@keyframes slide {
+  0% { background-position: 100% 0; }
+  100% { background-position: 0% 0; }
+}
 
 .headerButtons .material-icons {
   font-size: 35px!important;

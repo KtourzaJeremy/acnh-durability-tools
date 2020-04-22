@@ -8,6 +8,7 @@
   "INTERFACE.HIDE.BUGS.S": "Cacher le compteur de Scorpion",
   
   "INTERFACE.RESET": "Réinitilialiser",
+  "INTERFACE.RESET.BUG": "Tout vendre",
   "INTERFACE.RESET.CUSTOMIZABLE": "Personnaliser",
   "INTERFACE.REMOVE": "Détruire l'outil ?",
   "INTERFACE.UPGRADE": "Améliorer",

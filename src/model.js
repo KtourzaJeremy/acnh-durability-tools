@@ -107,7 +107,11 @@ export const ToolList = [
     image: img_net,
     customizable: true,
     upgrade: "TYPE.FILET.GOLD",
-    durability: 30
+    durability: 30,
+    ingredients: [
+      { item: "KEY.ITEM.ID", number: 10 },
+      { item: "KEY.ITEM.ID", number: 1 }
+    ]
   },
   {
     id: "TYPE.FILET.GOLD",

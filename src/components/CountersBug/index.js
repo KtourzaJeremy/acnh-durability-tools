@@ -1,4 +1,5 @@
 import React from "react"
+import CountUp from 'react-countup';
 import { FormattedMessage } from "react-intl"
 import { useCountersBugs } from "../../contexts/counters-bugs"
 import Icon from "../Icon"
@@ -22,17 +23,17 @@ export default function CountersBug(props) {
     <div className="CounterBug--prices">
         <div className="flick">
           <img className="imgbug" src={img_flick} alt="Flick"/>
-          <p>{(counterBugs.number*12000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")}</p>
+          <p><CountUp start={((counterBugs.previous)*12000)} end={(counterBugs.number*12000)} separator=" " useEasing={false}/></p>
         </div>
         <div className="bellbag">
           <img className="imgbug" src={img_bellbag} alt="BellBag"/>
-          <p>{(counterBugs.number*8000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")}</p>
+          <p><CountUp start={((counterBugs.previous)*8000)} end={(counterBugs.number*8000)} separator=" "/></p>
         </div>
     </div>
-
+    
       <div className="CounterBug--hits">
-        <button className="circular ui icon button" disable={minuslimit} onClick={() => onIncrementBug(-1)}>
-          <Icon name="remove" />
+        <button disabled={minuslimit} onClick={() => onIncrementBug(-1)}>
+          <Icon name="remove_circle" />
         </button>
 
         <div className="turnip">
@@ -44,7 +45,7 @@ export default function CountersBug(props) {
         </div>
 
         <button onClick={() => onIncrementBug(1)}>
-          <Icon name="add" />
+          <Icon name="add_circle" />
         </button>
       </div>
 
@@ -52,10 +53,11 @@ export default function CountersBug(props) {
           ? (<p className="turnip-p"><FormattedMessage id={"BUG.T"} /></p>)
           : (<p className="turnip-p"><FormattedMessage id={"BUG.S"} /></p>)
       }
-
+      <div className="reset-div">
       <button className="reset" onClick={() => resetCounterBug()}>
-        <FormattedMessage id={"INTERFACE.RESET"} />
+        <FormattedMessage id={"INTERFACE.RESET.BUG"} />
       </button>
+      </div>
     </div>
   )
 }

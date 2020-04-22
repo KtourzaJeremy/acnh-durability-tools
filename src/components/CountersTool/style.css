@@ -20,6 +20,7 @@
   -webkit-box-shadow: 6px 9px 12px -8px rgba(0,0,0,0.47);
   -moz-box-shadow: 6px 9px 12px -8px rgba(0,0,0,0.47);
   box-shadow: 6px 9px 12px -8px rgba(0,0,0,0.47);
+  transition: 1s;
 }
 
 .CounterTool h3 {
@@ -49,6 +50,14 @@
   text-align: center;
 }
 
+.almostBroken {
+  color:red;
+  transform: rotate(1deg) scale(1.05);
+}
+.almostBroken p {
+  transform: scale(1.3);
+}
+
 .CounterContent {
   padding: 5px 8px 10px 8px;
   display: flex;
@@ -76,11 +85,11 @@
   flex-grow: 1;
   text-align: center;
   border-radius: 2em;
-  border: 3px solid #0cbeb2;
-  -webkit-transition: #0cbeb2 1s ease-out;  
-    -moz-transition: #0cbeb2 1s ease-out;  
-    -o-transition: #0cbeb2 1s ease-out;  
-    transition: #0cbeb2 1s ease-out;
+  border: 3px solid #e7dcb1;
+  -webkit-transition: #0cbeb2 3s ease-out;  
+  -moz-transition: #0cbeb2 3s ease-out;  
+  -o-transition: #0cbeb2 3s ease-out;  
+  transition: #0cbeb2 3s ease-out;
  }
 
  .button-area button:hover {
@@ -94,7 +103,24 @@
       #0cbeb2 7px,
       #0cbeb2 14px /* determines size */
     );
+    background-size: 200px 200px; /* This is unique for this background, need to find a pattern and develop a formula */
+    -webkit-animation: slide 5s infinite linear forwards;
+    -moz-animation: slide 5s infinite linear forwards;
+    animation: slide 5s infinite linear forwards;
  }
+
+ @-webkit-keyframes slide {
+  0% { background-position: 100% 0; }
+  100% { background-position: 0% 0; }
+}
+@-moz-keyframes slide {
+  0% { background-position: 100% 0; }
+  100% { background-position: 0% 0; }
+}
+@keyframes slide {
+  0% { background-position: 100% 0; }
+  100% { background-position: 0% 0; }
+}
 
 .removeBtn {
   height: 30px;
@@ -116,6 +142,10 @@
   color: white;
 }
 
+.removeBtn:active {
+  transform: scale(1)!important;
+}
+
 .Popup h4{
   font-size: 16px!important;
   color: white;
@@ -129,15 +159,27 @@
   width: 50px;
   height: 50px;
   text-align: center;
+  background-color: white;
+  transition: background-color 0.2s;
 }
 
 .btnUpgrade img {
   border-radius: 100%;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  transition: 0.2s;
+}
+
+.btnUpgrade:hover {
+  background-color: blue;
+}
+
+.btnUpgrade:hover img {
+  width: 100%;
+  height: 100%;
 }
 
 .CounterTool--hits button {
@@ -147,4 +189,6 @@
   line-height: 1!important;
   margin: 0 3px;
   font-size: 14px;
+  color:#8c7d68;
+  background-color: #f5f7df;
 }

@@ -46,13 +46,13 @@ export default function CountersTool(props) {
                 )}
 
                 <button disabled={minuslimit} onClick={() => onHit(counter, -1)}>
-                  <Icon name="remove" />
+                  <Icon name="remove_circle" />
                 </button>
 
                 <p>{counter.hit} / {tool.durability}</p>
 
                 <button disabled={pluslimit} onClick={() => onHit(counter, 1)}>
-                  <Icon name="add" />
+                  <Icon name="add_circle" />
                 </button>
 
                 {tool.hits > 1 && (
@@ -80,7 +80,7 @@ export default function CountersTool(props) {
                               id="INTERFACE.UPGRADE" /></button>} 
                               position='top center'
                               style={style}
-                              flowing hoverable>
+                              flowing hoverable inverted>
                       <h3><FormattedMessage id="INTERFACE.UPGRADE.CHOOSE"/></h3>
                       <Grid centered columns={2}>
                         <Grid.Row>
