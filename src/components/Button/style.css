@@ -17,6 +17,7 @@
   box-shadow: 0 0 0 var(--Button--border-size) var(--Button--border-idle);
   overflow: hidden;
   cursor: pointer;
+  text-align: center;
 }
 
 .Button:active {
@@ -99,7 +100,6 @@
 
 @media (max-width: 540px) {
   .headerButtons > button {
-    margin: 5px 5px;
     width: 220px;
     min-width: 220px !important;
   }
@@ -127,12 +127,7 @@
 
   .headerButtons > button {
     margin: 5px 10px;
-    text-align: left;
     min-width: 250px;
-  }
-
-  .headerButtons > button > div {
-    flex-direction: row;
   }
 
   .headerButtons > button > div .material-icons {

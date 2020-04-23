@@ -53,11 +53,16 @@ export function CounterToolsProvider(props) {
     updateCounter(counter.id, { hit: 0, tool: upgradetool });
   };
 
+  const setCounterTool = (counter, number) => {
+    updateCounter(counter.id, { hit: number });
+  };
+
   return (
     <CounterToolsContext.Provider
       value={{
         countersTools: counters,
         onAddNewCounterTool,
+        setCounterTool,
         onHitCounterTool,
         resetCounterTool,
         upgradeCounterTool,

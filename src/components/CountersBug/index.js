@@ -10,6 +10,9 @@ import img_scorpion from "../../img/bugs/scorpion.png";
 import img_bellbag from "../../img/icons/BellBag.png";
 import img_flick from "../../img/icons/Flick.png";
 
+const LIMIT_DOWN = 0
+const LIMIT_UP = 1000
+
 export default function CountersBug(props) {
   const {
     counterBugs,
@@ -17,15 +20,14 @@ export default function CountersBug(props) {
     setBugCounter,
     resetCounterBug,
   } = useCountersBugs();
-  const minuslimit = counterBugs.number === 0;
-  const pluslimit = counterBugs.number === 1000;
+  const minuslimit = counterBugs.number <= LIMIT_DOWN;
+  const pluslimit = counterBugs.number >= LIMIT_UP;
   const hemishpereNorth = props.hemishpereNorth;
 
   const handleBugCountChange = (event) => {
-    const value = parseInt(event.target.value);
+    const value = Math.min(LIMIT_UP, Math.max(parseInt(event.target.value), LIMIT_DOWN));
     setBugCounter(value);
   };
-
   
   return (
     <div className="CounterBug">

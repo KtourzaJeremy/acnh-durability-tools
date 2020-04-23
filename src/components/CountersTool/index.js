@@ -9,6 +9,7 @@ import "./style.css";
 export default function CountersTool(props) {
   const {
     countersTools: counters,
+    setCounterTool: set,
     onHitCounterTool: onHit,
     resetCounterTool: reset,
     upgradeCounterTool: upgrade,
@@ -16,12 +17,6 @@ export default function CountersTool(props) {
     removeCounterTool: remove,
   } = useCountersTools();
 
-  const handleToolCountChange = (event) => {
-    const value = parseInt(event.target.value);
-    onHit(value);
-  };
-
-  
   return (
     <div className="CountersTool">
       {counters.map((counter) => {
@@ -31,6 +26,11 @@ export default function CountersTool(props) {
         const pluslimit = counter.hit === tool.durability;
         const minushitslimit = tool.hits - counter.hit > 0;
         const plushitslimit = tool.hits + counter.hit > tool.durability;
+
+        const handleToolCountChange = (event) => {
+          const value = Math.min(tool.durability, Math.max(parseInt(event.target.value), 0));
+          set(counter,value);
+        };
 
         const isFlimsyAxe = tool.id === "TYPE.HACHE.RUDIMENTAIRE";
 

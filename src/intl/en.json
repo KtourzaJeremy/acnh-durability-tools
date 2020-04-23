@@ -13,6 +13,11 @@
   "INTERFACE.REMOVE": "Break the tool ?",
   "INTERFACE.RESET_ALL": "Erase all your inventory",
 
+  "LOSS": "Loses durability :",
+  "NOLOSS": "No durability loss :",
+  "BREAKSWHEN": "Breaks when :",
+  "EXCEPTIONS": "Exceptions :",
+
   "CATEGORY.FILET": "Nets",
   "CATEGORY.PECHE": "Fishing rods",
   "CATEGORY.HACHE": "Axes",

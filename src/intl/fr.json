@@ -14,6 +14,11 @@
   "INTERFACE.UPGRADE": "Améliorer",
   "INTERFACE.RESET_ALL": "Supprimer tout votre inventaire",
 
+  "LOSS": "Perd de la durabilité :",
+  "NOLOSS": "Pas de perte de durabilité :",
+  "BREAKSWHEN": "Se casse quand :",
+  "EXCEPTIONS": "Exceptions :",
+
   "CATEGORY.FILET": "Filets",
   "CATEGORY.PECHE": "Cannes à pêche",
   "CATEGORY.HACHE": "Haches",
