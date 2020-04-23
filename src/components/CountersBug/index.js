@@ -26,6 +26,7 @@ export default function CountersBug(props) {
     setBugCounter(value);
   };
 
+  
   return (
     <div className="CounterBug">
       <div className="CounterBug--prices">

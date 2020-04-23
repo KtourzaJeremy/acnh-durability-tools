@@ -21,6 +21,7 @@ export default function CountersTool(props) {
     onHit(value);
   };
 
+  
   return (
     <div className="CountersTool">
       {counters.map((counter) => {
