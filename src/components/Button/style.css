@@ -1,0 +1,142 @@
+.Button {
+  border: none;
+  margin: 0 5px;
+  max-width: 250px;
+  font-size: 0.8em;
+  color: white;
+  text-decoration: none;
+  text-shadow: -1px 1px 2px darkslategray;
+  flex-grow: 1;
+
+  --Button--background: #587cd2;
+  --Button--border: #7793e6;
+  --Button--border-idle: transparent;
+  --Button--border-size: 4px;
+
+  background-color: var(--Button--background);
+  box-shadow: 0 0 0 var(--Button--border-size) var(--Button--border-idle);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.Button:active {
+  transform: scale(0.95);
+}
+
+.Button:disabled {
+  transform: scale(1) !important;
+  color: lightgray !important;
+}
+
+.Button,
+.Button > div {
+  border-radius: 4em;
+}
+
+.Button > div {
+  padding: 0.6em 1.3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: calc(100% + 200px) 100%;
+}
+
+@keyframes slide {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.Button:hover {
+  box-shadow: 0 0 0 var(--Button--border-size) var(--Button--border);
+}
+
+.Button:hover > div {
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.1) 7px,
+    transparent 7px,
+    transparent 14px
+  );
+  animation: slide 5s infinite linear;
+}
+
+.Button-theme-good {
+  --Button--background: #0cbeb2;
+  --Button--border: #61d5c3;
+}
+
+.Button-theme-warning {
+  --Button--background: #f7d32e;
+  --Button--border: #fffca8;
+}
+
+.Button-theme-bad {
+  --Button--background: #ff0000;
+  --Button--border: #ea7676;
+}
+
+.Button-type-icon {
+  --Button--border-size: 3px;
+  border-radius: 100%;
+  width: 26px;
+  height: 26px;
+  line-height: 1 !important;
+  font-size: 20px;
+  color: #b9d8f7;
+  margin: 8px 0;
+  text-align: center;
+  text-shadow: none;
+}
+
+.Button-type-icon > div {
+  padding: 0;
+}
+
+@media (max-width: 540px) {
+  .headerButtons > button {
+    margin: 5px 5px;
+    width: 220px;
+    min-width: 220px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerButtons > button {
+    width: 180px;
+    min-width: 180px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .headerButtons > button {
+    width: 148px;
+    min-width: 148px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .headerButtons {
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .headerButtons > button {
+    margin: 5px 10px;
+    text-align: left;
+    min-width: 250px;
+  }
+
+  .headerButtons > button > div {
+    flex-direction: row;
+  }
+
+  .headerButtons > button > div .material-icons {
+    font-size: 2em;
+    margin-right: 0.2em;
+  }
+}

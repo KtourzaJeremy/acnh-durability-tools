@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Intl from "./intl";
+import "rc-tooltip/assets/bootstrap_white.css";
 import "./global.css";
 import App from "./components/App";
 import { CounterToolsProvider } from "./contexts/counters-tools";
