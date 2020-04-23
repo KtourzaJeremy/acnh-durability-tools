@@ -30,3 +30,20 @@ html {
   color: var(--color-text);
   user-select: none;
 }
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+button:disabled {
+  transform: scale(1) !important;
+  color: lightgray !important;
+}
+
+.rc-tooltip {
+  max-width: 250px;
+}

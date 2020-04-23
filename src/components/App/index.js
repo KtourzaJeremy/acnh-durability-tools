@@ -6,13 +6,14 @@ import ToolCategories from "../ToolCategories";
 import CountersTool from "../CountersTool";
 import CountersBug from "../CountersBug";
 import Icon from "../Icon";
+import Button from "../Button";
 import "./style.css";
 import "./semantic-ui.css";
 
 function App(props) {
   const [showTools, setshowTools] = useState(true);
   const [hemishpereNorth, setHemisphere] = useState(true);
-  const { resetAll } = useCountersTools();
+  const { resetAll, countersTools } = useCountersTools();
   const { counterBugs, onAddCounterBug, removeBug } = useCountersBugs();
 
   const reset = () => {
@@ -64,38 +65,38 @@ function App(props) {
 
       <main className="App--main">
         <div className="headerButtons">
-          <button className="headerButtons--tools" onClick={toggleAffichage}>
-            <div>
+          <Button theme="good" onClick={toggleAffichage}>
+            <div className="headerButton--inner">
               <Icon name={showTools ? "visibility_off" : "visibility"} />
               <FormattedMessage
                 id={showTools ? "INTERFACE.HIDE.TOOLS" : "INTERFACE.SHOW.TOOLS"}
               />
             </div>
-          </button>
+          </Button>
 
-          <button
-            className="headerButtons--hemisphere"
-            onClick={toggleHemisphere}
-          >
-            <div>
+          <Button onClick={toggleHemisphere}>
+            <div className="headerButton--inner">
               <Icon name="public" />
               <FormattedMessage id={hemishpereNorth ? "NORTH" : "SOUTH"} />
             </div>
-          </button>
+          </Button>
 
-          <button className="headerButtons--bug" onClick={counterBugs.enabled ?(removeBug) :(addBug)}>
-            <div>
+          <Button
+            theme="warning"
+            onClick={counterBugs.enabled ? removeBug : addBug}
+          >
+            <div className="headerButton--inner">
               <Icon name="bug_report" />
               <FormattedMessage id={getHemisphereBugText()} />
             </div>
-          </button>
+          </Button>
 
-          <button className="headerButtons--delete" onClick={reset}>
-            <div>
+          <Button theme="bad" onClick={reset}>
+            <div className="headerButton--inner">
               <Icon name="delete_forever" />
               <FormattedMessage id="INTERFACE.RESET_ALL" />
             </div>
-          </button>
+          </Button>
         </div>
 
         {showTools && <ToolCategories />}
@@ -103,7 +104,8 @@ function App(props) {
         {counterBugs.enabled && (
           <CountersBug hemishpereNorth={hemishpereNorth} />
         )}
-        <CountersTool />
+
+        {countersTools.length > 0 && <CountersTool />}
       </main>
 
       <div className="footer">

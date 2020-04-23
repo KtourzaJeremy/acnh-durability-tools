@@ -21,137 +21,21 @@
   color: white;
 }
 
-button {
-  border: none;
-  cursor: pointer;
-}
-
-button:active {
-  transform: scale(0.95);
-}
-button:disabled {
-  transform: scale(1) !important;
-  color: lightgray !important;
-}
-
 .headerButtons {
   display: flex;
   max-width: 100vw;
   justify-content: center;
+  margin-bottom: 1em;
 }
 
-.headerButtons > button,
-.headerButtons > button > div {
-  border-radius: 4em;
-}
-
-.headerButtons > button {
-  margin: 0 5px;
-  max-width: 250px;
-  font-size: 0.8em;
-  color: white;
-  text-decoration: none;
-  text-shadow: -1px 1px 2px darkslategray;
-  flex-grow: 1;
-
-  --headerButton--background: grey;
-  --headerButton--border: rgb(75, 75, 75);
-
-  background-color: var(--headerButton--background);
-  overflow: hidden;
-}
-
-.headerButtons > button > div {
-  padding: 0.6em 1.3em;
+.headerButtons .headerButton--inner {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  background-size: calc(100% + 200px) 100%;
-}
-
-@keyframes slide {
-  0% {
-    background-position: -200px 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-.headerButtons > button:hover {
-  box-shadow: 0 0 0 4px var(--headerButton--border);
-}
-
-.headerButtons > button:hover > div {
-  background-image: repeating-linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0.1),
-    rgba(0, 0, 0, 0.1) 7px,
-    transparent 7px,
-    transparent 14px
-  );
-  animation: slide 5s infinite linear;
-}
-
-button.headerButtons--tools {
-  --headerButton--background: #0cbeb2;
-  --headerButton--border: #61d5c3;
-}
-
-button.headerButtons--hemisphere {
-  --headerButton--background: #587cd2;
-  --headerButton--border: #7793e6;
-}
-
-button.headerButtons--bug {
-  --headerButton--background: #f7d32e;
-  --headerButton--border: #fffca8;
-}
-
-button.headerButtons--delete {
-  --headerButton--background: #ff0000;
-  --headerButton--border: #ea7676;
+  flex-direction: column;
 }
 
 .headerButtons .material-icons {
   font-size: 35px !important;
-}
-
-@media (max-width: 540px) {
-  .headerButtons > button {
-    margin: 5px 5px;
-    width: 220px;
-    min-width: 220px!important;
-  }
-}
-
-@media (max-width: 480px) {
-  .headerButtons > button {
-    width: 180px;
-    min-width: 180px!important;
-  }
-}
-
-@media (max-width: 800px) {
-  .headerButtons {
-    flex-wrap: wrap;
-    align-items: stretch;
-  }
-
-  .headerButtons > button {
-    margin: 5px 10px;
-    text-align: left;
-    min-width: 250px;
-  }
-
-  .headerButtons > button > div {
-    flex-direction: row;
-  }
-
-  .headerButtons > button > div .material-icons {
-    font-size: 2em;
-    margin-right: 0.2em;
-  }
 }
 
 .footer {
