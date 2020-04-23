@@ -48,6 +48,27 @@
   text-align: center;
 }
 
+.tool-p {
+  color: #795738;
+  background: #e7dcb1;
+  border: none;
+  font-size: 18px;
+  width: 30px;
+  text-align: right;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.tool-p::-webkit-outer-spin-button,
+.tool-p::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.tool-p[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .almostBroken {
   color: red;
   transform: rotate(1deg) scale(1.05);
@@ -55,7 +76,9 @@
 .almostBroken p {
   transform: scale(1.3);
 }
-
+.almostBroken > .tool-p {
+  color: red !important;
+}
 .CounterContent {
   padding: 5px 8px 10px 8px;
   display: flex;

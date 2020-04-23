@@ -16,6 +16,14 @@ export function CounterBugsProvider(props) {
     resetCounterBug();
   };
 
+  const setBugCounter = (number) => {
+    setCounter({
+      enabled: true,
+      previous: counter.number,
+      number: number,
+    });
+  };
+
   const onIncrementBug = (number) => {
     setCounter({
       enabled: true,
@@ -44,6 +52,7 @@ export function CounterBugsProvider(props) {
         counterBugs: counter,
         onAddCounterBug,
         onIncrementBug,
+        setBugCounter,
         resetCounterBug,
         removeBug,
       }}

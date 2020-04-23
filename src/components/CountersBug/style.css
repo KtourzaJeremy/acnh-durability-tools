@@ -148,11 +148,23 @@
 
 .turnip > input {
   color: yellow;
-  background: blue;
+  background: #64b14b;
   border: none;
   font-size: 22px;
-  width: 50px;
+  width: 55px;
   text-align: right;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.turnip > input::-webkit-outer-spin-button,
+.turnip > input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.turnip > input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .turnip-p {
@@ -168,6 +180,6 @@
 
 @media (max-width: 400px) {
   .CounterBug {
-    width: 300px!important;
+    width: 300px !important;
   }
 }

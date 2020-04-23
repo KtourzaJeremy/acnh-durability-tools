@@ -11,9 +11,20 @@ import img_bellbag from "../../img/icons/BellBag.png";
 import img_flick from "../../img/icons/Flick.png";
 
 export default function CountersBug(props) {
-  const { counterBugs, onIncrementBug, resetCounterBug } = useCountersBugs();
+  const {
+    counterBugs,
+    onIncrementBug,
+    setBugCounter,
+    resetCounterBug,
+  } = useCountersBugs();
   const minuslimit = counterBugs.number === 0;
+  const pluslimit = counterBugs.number === 1000;
   const hemishpereNorth = props.hemishpereNorth;
+
+  const handleBugCountChange = (event) => {
+    const value = parseInt(event.target.value);
+    setBugCounter(value);
+  };
 
   return (
     <div className="CounterBug">
@@ -52,11 +63,17 @@ export default function CountersBug(props) {
           ) : (
             <img src={img_scorpion} alt="BUG.S" />
           )}
-          {/*<input type="text" value={counterBugs.number} onChange={this.handleChange} />*/}
-          <h3>{counterBugs.number}</h3>
+
+          <input
+            type="number"
+            value={counterBugs.number}
+            max="1000"
+            min="0"
+            onChange={handleBugCountChange}
+          />
         </div>
 
-        <button onClick={() => onIncrementBug(1)}>
+        <button disabled={pluslimit} onClick={() => onIncrementBug(1)}>
           <Icon name="add_circle" />
         </button>
       </div>

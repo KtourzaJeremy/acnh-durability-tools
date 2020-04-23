@@ -16,6 +16,11 @@ export default function CountersTool(props) {
     removeCounterTool: remove,
   } = useCountersTools();
 
+  const handleToolCountChange = (event) => {
+    const value = parseInt(event.target.value);
+    onHit(value);
+  };
+
   return (
     <div className="CountersTool">
       {counters.map((counter) => {
@@ -73,7 +78,15 @@ export default function CountersTool(props) {
                 </button>
 
                 <p>
-                  {counter.hit} / {tool.durability}
+                  <input
+                    className="tool-p"
+                    type="number"
+                    value={counter.hit}
+                    max={tool.durability}
+                    min="0"
+                    onChange={handleToolCountChange}
+                  />{" "}
+                  / {tool.durability}
                 </p>
 
                 <button disabled={pluslimit} onClick={() => onHit(counter, 1)}>
