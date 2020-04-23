@@ -146,6 +146,15 @@
   padding-top: 0.1em !important;
 }
 
+.turnip > input {
+  color: yellow;
+  background: blue;
+  border: none;
+  font-size: 22px;
+  width: 50px;
+  text-align: right;
+}
+
 .turnip-p {
   background: white;
   padding: 0.2em 0.6em;
@@ -155,4 +164,10 @@
   transform: translate(75%, -80%);
   z-index: 1;
   position: relative;
+}
+
+@media (max-width: 400px) {
+  .CounterBug {
+    width: 300px!important;
+  }
 }

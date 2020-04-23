@@ -15,9 +15,8 @@ export default function ToolCategories() {
         const tools = ToolList.filter(tool => tool.category === category.id)
 
         const style = {
-          borderRadius: 60,
-          opacity: 0.96,
-          padding: '1em',
+          borderRadius: 20,
+          opacity: 0.96
         }
 
         return (
@@ -29,24 +28,47 @@ export default function ToolCategories() {
 
             <Popup
               trigger={<button>i</button>}
-              position='bottom center'
               style={style}
               on='click'
-              basic pinned>
-              <Grid centered columns={4}>
-
-
-                <ul>
-                  {category.durability.loss.map(lossPart => (
-                    <li><FormattedMessage id={lossPart} /></li>
-                  ))}
-                </ul>
-
-                <Grid.Row>
-                  <Grid.Column textAlign='center'>
-                    <h4><FormattedMessage id={category.durability} /></h4>
-                  </Grid.Column>
+              basic wide pinned>
+              <Grid>
+                <Grid.Row className="grid--tools">
+                  <ul>
+                    <h4><FormattedMessage id="LOSS"/></h4>
+                    {category.durability.loss.map(lossPart => (
+                      <li><FormattedMessage id={lossPart} /></li>
+                    ))}
+                  </ul>
                 </Grid.Row>
+                
+                <Grid.Row className="grid--tools">
+                  <ul>
+                    <h4><FormattedMessage id="NOLOSS"/></h4>
+                    {category.durability.noLoss.map(noLossPart => (
+                      <li><FormattedMessage id={noLossPart} /></li>
+                    ))}
+                  </ul>
+                </Grid.Row>
+
+                <Grid.Row className="grid--tools">
+                  <ul>
+                    <h4><FormattedMessage id="BREAKSWHEN"/></h4>
+                    {category.durability.breakswhen.map(breakswhenPart => (
+                      <li><FormattedMessage id={breakswhenPart} /></li>
+                    ))}
+                  </ul>
+                </Grid.Row>
+                
+                {category.durability.exceptions.length != 0 && (
+                <Grid.Row className="grid--tools">
+                  <ul>
+                    <h4><FormattedMessage id="EXCEPTIONS"/></h4>
+                    {category.durability.exceptions.map(exceptionsPart => (
+                      <li><FormattedMessage id={exceptionsPart} /></li>
+                    ))}
+                  </ul>
+                </Grid.Row>
+                 )}
               </Grid>
             </Popup>
 

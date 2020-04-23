@@ -83,7 +83,7 @@ function App(props) {
             </div>
           </button>
 
-          <button className="headerButtons--bug" onClick={addBug}>
+          <button className="headerButtons--bug" onClick={counterBugs.enabled ?(removeBug) :(addBug)}>
             <div>
               <Icon name="bug_report" />
               <FormattedMessage id={getHemisphereBugText()} />

@@ -52,6 +52,7 @@ export default function CountersBug(props) {
           ) : (
             <img src={img_scorpion} alt="BUG.S" />
           )}
+          {/*<input type="text" value={counterBugs.number} onChange={this.handleChange} />*/}
           <h3>{counterBugs.number}</h3>
         </div>
 
