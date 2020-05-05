@@ -14,7 +14,7 @@
   "INTERFACE.RESET.CUSTOMIZABLE": "Customize",
   "INTERFACE.REMOVE": "Break the tool ?",
   "INTERFACE.UPGRADE": "Upgrade",
-  "INTERFACE.UPGRADE.CHOOSE": "Two choices possible",
+  "INTERFACE.UPGRADE.CHOOSE": "Two possible choices",
   "INTERFACE.RESET_ALL": "Erase all your inventory",
   "INTERFACE.ERASEALL": "Are you sure? This will erase all your tools and their counters",
 
@@ -46,7 +46,7 @@
 
   "TYPE.HACHE.RUDIMENTAIRE": "Flimsy axe",
   "TYPE.HACHE.NORMAL": "Axe",
-  "TYPE.HACHE.PIERRE": "Hache en pierre",
+  "TYPE.HACHE.PIERRE": "Stone axe",
   "TYPE.HACHE.GOLD": "Golden axe",
 
   "TYPE.PELLE.RUDIMENTAIRE": "Flimsy shovel",
