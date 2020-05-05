@@ -19,7 +19,7 @@ function App(props) {
   const reset = () => {
     if (
       !window.confirm(
-        "Are you sure? This will erase all your tools and their counters"
+        <FormattedMessage id="INTERFACE.ERASEALL"/>
       )
     ) {
       return;
@@ -59,8 +59,9 @@ function App(props) {
     <div className="App">
       <header className="App--header">
         <h1 className="App--title">
-          <FormattedMessage id="INTERFACE.TITLE" />
+          Nook Companion
         </h1>
+        <h2><FormattedMessage id="INTERFACE.TITLE" /></h2>
       </header>
 
       <main className="App--main">
@@ -114,7 +115,7 @@ function App(props) {
           <a href="https://www.twitter.com/ktouktou">Twitter</a>
         </p>
         <p>
-          Research by Alby (
+          Research compiled by Alby (
           <a href="https://gamefaqs.gamespot.com/boards/248082-animal-crossing-new-horizons/78541133">
             King_Yoshius_IV
           </a>
@@ -128,7 +129,7 @@ function App(props) {
           </a>{" "}
           (@dahrae_)
         </p>
-        <p>&copy; Ktouktou and Saming 2020</p>
+        <p>All pictures &copy;Nintendo 2020 - Nook Companion &copy; Ktouktou and Saming 2020</p>
       </div>
     </div>
   );

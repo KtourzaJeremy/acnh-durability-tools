@@ -25,6 +25,10 @@ input {
   font-weight: bold;
 }
 
+a {
+  color: marron
+}
+
 html {
   background: var(--color-background);
   color: var(--color-text);

@@ -11,7 +11,10 @@
   "INTERFACE.RESET.BUG": "Sell it all",
   "INTERFACE.RESET.CUSTOMIZABLE": "Customize",
   "INTERFACE.REMOVE": "Break the tool ?",
+  "INTERFACE.UPGRADE": "Upgrade",
+  "INTERFACE.UPGRADE.CHOOSE": "Two choices possible",
   "INTERFACE.RESET_ALL": "Erase all your inventory",
+  "INTERFACE.ERASEALL": "Are you sure? This will erase all your tools and their counters",
 
   "LOSS": "Loses durability :",
   "NOLOSS": "No durability loss :",

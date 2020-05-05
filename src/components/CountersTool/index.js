@@ -1,4 +1,5 @@
 import React from "react";
+import Tooltip from "rc-tooltip";
 import { Button, Popup, Grid } from "semantic-ui-react";
 import { FormattedMessage } from "react-intl";
 import { ToolList } from "../../model";
@@ -35,9 +36,8 @@ export default function CountersTool(props) {
         const isFlimsyAxe = tool.id === "TYPE.HACHE.RUDIMENTAIRE";
 
         const style = {
-          borderRadius: 60,
-          opacity: 0.96,
-          padding: "0.5em",
+          borderRadius: 40,
+          fontSize: '12px',
         };
 
         const showImgTool = (name) => {
@@ -80,7 +80,7 @@ export default function CountersTool(props) {
 
                 <p>
                   <input
-                    className="tool-p"
+                    className={"input-p " + (almostBroken ? "almostBroken" : "")}
                     type="number"
                     value={counter.hit}
                     max={tool.durability}
@@ -126,7 +126,6 @@ export default function CountersTool(props) {
                 {tool.upgrade &&
                   (isFlimsyAxe ? (
                     <Popup
-                      className="Popup"
                       trigger={
                         <button>
                           <FormattedMessage id="INTERFACE.UPGRADE" />
@@ -134,15 +133,15 @@ export default function CountersTool(props) {
                       }
                       position="top center"
                       style={style}
-                      flowing
-                      hoverable
+                      on='click'
+                      pinned
                       inverted
                     >
-                      <h3>
-                        <FormattedMessage id="INTERFACE.UPGRADE.CHOOSE" />
-                      </h3>
                       <Grid centered columns={2}>
                         <Grid.Row>
+                        <h3>
+                          <FormattedMessage id="INTERFACE.UPGRADE.CHOOSE" />
+                        </h3>
                           <Grid.Column textAlign="center">
                             <h4>
                               <FormattedMessage id={tool.upgrade[0]} />

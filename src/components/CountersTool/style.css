@@ -48,9 +48,9 @@
   text-align: center;
 }
 
-.tool-p {
+.input-p {
   color: #795738;
-  background: #e7dcb1;
+  background: transparent;
   border: none;
   font-size: 18px;
   width: 30px;
@@ -58,14 +58,14 @@
 }
 
 /* Chrome, Safari, Edge, Opera */
-.tool-p::-webkit-outer-spin-button,
-.tool-p::-webkit-inner-spin-button {
+.input-p::-webkit-outer-spin-button,
+.input-p::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
 /* Firefox */
-.tool-p[type="number"] {
+.input-p[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -98,7 +98,7 @@
 .button-area button {
   background: #0cbeb2;
   padding: 0.6em 1.3em;
-  margin: 0 4px 0 4px;
+  margin: 6px 4px 6px 4px;
   font-size: 0.9em;
   color: white;
   text-decoration: none;
@@ -106,7 +106,7 @@
   flex-grow: 1;
   text-align: center;
   border-radius: 2em;
-  border: 3px solid #e7dcb1;
+  border: 3px solid transparent;
   transition: #0cbeb2 3s ease-out;
 }
 
@@ -173,14 +173,6 @@
   transform: scale(1) !important;
 }
 
-.Popup h4 {
-  font-size: 16px !important;
-  color: white;
-  text-align: center;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
 .btnUpgrade {
   border-radius: 100%;
   width: 50px;
@@ -201,7 +193,7 @@
 }
 
 .btnUpgrade:hover {
-  background-color: blue;
+  background-color: yellow;
 }
 
 .btnUpgrade:hover img {

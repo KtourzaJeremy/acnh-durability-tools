@@ -1,5 +1,5 @@
 {
-  "INTERFACE.TITLE": "Durabilité des outils dans ACNH",
+  "INTERFACE.TITLE": "Gérer votre inventaire d'outils avant qu'ils ne se cassent. Faites du profit avec la chasse de tarentules et de scorpions.",
   "INTERFACE.SHOW.TOOLS": "Afficher tous les outils",
   "INTERFACE.HIDE.TOOLS": "Cacher tous les outils",
   "INTERFACE.SHOW.BUGS.T": "Afficher le compteur de Tarentule",
@@ -12,7 +12,9 @@
   "INTERFACE.RESET.CUSTOMIZABLE": "Personnaliser",
   "INTERFACE.REMOVE": "Détruire l'outil ?",
   "INTERFACE.UPGRADE": "Améliorer",
+  "INTERFACE.UPGRADE.CHOOSE": "Deux choix possibles",
   "INTERFACE.RESET_ALL": "Supprimer tout votre inventaire",
+  "INTERFACE.ERASEALL": "En êtes vous sûr ? Cela supprimera tous vos outils et leurs compteurs ?",
 
   "LOSS": "Perd de la durabilité :",
   "NOLOSS": "Pas de perte de durabilité :",

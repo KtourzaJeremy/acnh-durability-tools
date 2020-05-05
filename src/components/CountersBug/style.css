@@ -5,18 +5,24 @@
   overflow-x: auto;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: #e6dfc4;
 }
 
 .CounterBug {
+  background-image: url("/money.jpg");
+  background-size: 200px 200px;
   padding: 10px;
   margin: 10px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid var(--color-border);
+  border: 8px solid #f2f1e2;
   border-radius: var(--size-border-radius);
-  background-color: #f1f2d3;
-  width: 325px;
+  background-color: #e7dcb1;
+  color: #795738;
+  box-shadow: 6px 9px 12px -8px rgba(0, 0, 0, 0.47);
+  background-color: #e7dcb1;
+  width: 340px;
 }
 
 .CounterBug > :not(:last-child) {
