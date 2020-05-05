@@ -17,6 +17,7 @@
 
 .App--title {
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .headerButtons {
@@ -43,4 +44,12 @@
   color: white;
   text-align: left;
   font-size: small;
+}
+
+.empty {
+  padding: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #e6dfc4;
 }

@@ -1,5 +1,6 @@
 {
-  "INTERFACE.TITLE": "Gérer votre inventaire d'outils avant qu'ils ne se cassent. Faites du profit avec la chasse de tarentules et de scorpions.",
+  "INTERFACE.TITLE.1": "Gérer votre inventaire d'outils avant qu'ils ne se cassent.",
+  "INTERFACE.TITLE.2": "Gagner un max de clochettes avec la chasse de tarentules et de scorpions.",
   "INTERFACE.SHOW.TOOLS": "Afficher tous les outils",
   "INTERFACE.HIDE.TOOLS": "Cacher tous les outils",
   "INTERFACE.SHOW.BUGS.T": "Afficher le compteur de Tarentule",
@@ -7,6 +8,7 @@
   "INTERFACE.SHOW.BUGS.S": "Afficher le compteur de Scorpion",
   "INTERFACE.HIDE.BUGS.S": "Cacher le compteur de Scorpion",
 
+  "INTERFACE.NOTOOL": "Votre inventaire est vide",
   "INTERFACE.RESET": "Réinitilialiser",
   "INTERFACE.RESET.BUG": "Tout vendre",
   "INTERFACE.RESET.CUSTOMIZABLE": "Personnaliser",
@@ -31,10 +33,16 @@
   "TYPE.FILET.RUDIMENTAIRE": "Filet rudimentaire",
   "TYPE.FILET.NORMAL": "Filet",
   "TYPE.FILET.GOLD": "Filet en or",
+  "TYPE.FILET.COLORFUL": "Filet coloré",
+  "TYPE.FILET.OUTDOORSY": "Filet de rando",
+  "TYPE.FILET.CUSTOM": "Filet étoilé",
 
   "TYPE.PECHE.RUDIMENTAIRE": "Canne à pêche rudimentaire",
   "TYPE.PECHE.NORMAL": "Canne à pêche",
   "TYPE.PECHE.GOLD": "Canne à pêche en or",
+  "TYPE.PECHE.COLORFUL": "Canne à pêche coloré",
+  "TYPE.PECHE.OUTDOORSY": "Canne à pêche de rando",
+  "TYPE.PECHE.CUSTOM": "Canne à pêche poisson",
 
   "TYPE.HACHE.RUDIMENTAIRE": "Hache rudimentaire",
   "TYPE.HACHE.NORMAL": "Hache",
@@ -44,13 +52,21 @@
   "TYPE.PELLE.RUDIMENTAIRE": "Pelle rudimentaire",
   "TYPE.PELLE.NORMAL": "Pelle",
   "TYPE.PELLE.GOLD": "Pelle en or",
+  "TYPE.PELLE.COLORFUL": "Pelle coloré",
+  "TYPE.PELLE.OUTDOORSY": "Pelle de rando",
+  "TYPE.PELLE.CUSTOM": "Pelle imprimé",
 
   "TYPE.LANCEPIERRE.NORMAL": "Lance-pierre",
   "TYPE.LANCEPIERRE.GOLD": "Lance-pierre en or",
+  "TYPE.LANCEPIERRE.COLORFUL": "Lance-pierre coloré",
+  "TYPE.LANCEPIERRE.OUTDOORSY": "Lance-pierre de rando",
 
   "TYPE.ARROSOIR.RUDIMENTAIRE": "Arrosoir rudimentaire",
   "TYPE.ARROSOIR.NORMAL": "Arrosoir",
   "TYPE.ARROSOIR.GOLD": "Arrosoir en or",
+  "TYPE.ARROSOIR.COLORFUL": "Arrosoir coloré",
+  "TYPE.ARROSOIR.OUTDOORSY": "Arrosoir de rando",
+  "TYPE.ARROSOIR.CUSTOM": "Arrosoir éléphant",
 
   "LOSS.HACHE.PELLE.1": "Taper des Rochers",
   "LOSS.BREAK.HACHE.2": "Taper des Arbres",

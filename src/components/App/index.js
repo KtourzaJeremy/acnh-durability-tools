@@ -42,17 +42,17 @@ function App(props) {
   const getHemisphereBugText = () => {
     if (counterBugs.enabled) {
       if (hemishpereNorth) {
-        return "INTERFACE.HIDE.BUGS.T";
+        return "INTERFACE.HIDE.BUGS.S";
       }
 
-      return "INTERFACE.HIDE.BUGS.S";
+      return "INTERFACE.HIDE.BUGS.T";
     }
 
     if (hemishpereNorth) {
-      return "INTERFACE.SHOW.BUGS.T";
+      return "INTERFACE.SHOW.BUGS.S";
     }
 
-    return "INTERFACE.SHOW.BUGS.S";
+    return "INTERFACE.SHOW.BUGS.T";
   };
 
   return (
@@ -61,7 +61,7 @@ function App(props) {
         <h1 className="App--title">
           Nook Companion
         </h1>
-        <h2><FormattedMessage id="INTERFACE.TITLE" /></h2>
+        <p><FormattedMessage id="INTERFACE.TITLE.1" /></p><p><FormattedMessage id="INTERFACE.TITLE.2" /></p>
       </header>
 
       <main className="App--main">
@@ -103,15 +103,16 @@ function App(props) {
         {showTools && <ToolCategories />}
 
         {counterBugs.enabled && (
-          <CountersBug hemishpereNorth={hemishpereNorth} />
+          <CountersBug hemishpereNorth={!hemishpereNorth} />
         )}
 
         {countersTools.length > 0 && <CountersTool />}
+        {countersTools.length == 0 && <div className="empty"><h3><FormattedMessage id="INTERFACE.NOTOOL" /></h3></div>}
       </main>
 
       <div className="footer">
         <p>
-          Created by Ktouktou and Saming, Follow us on{" "}
+          Created by Ktouktou and Saming, Nook Companion is still in developpement, Follow us on{" "}
           <a href="https://www.twitter.com/ktouktou">Twitter</a>
         </p>
         <p>

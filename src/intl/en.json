@@ -1,5 +1,6 @@
 {
-  "INTERFACE.TITLE": "ACNH Durability Tools",
+  "INTERFACE.TITLE.1": "Manage your inventory of tools before they break.",
+  "INTERFACE.TITLE.2": "Win a lot of bells by hunting for tarantulas and scorpions.",
   "INTERFACE.SHOW.TOOLS": "Show all tools",
   "INTERFACE.HIDE.TOOLS": "Hide all tools",
   "INTERFACE.SHOW.BUGS.T": "Show Tarantula counter",
@@ -7,6 +8,7 @@
   "INTERFACE.SHOW.BUGS.S": "Show Scorpion counter",
   "INTERFACE.HIDE.BUGS.S": "Hide Scorpion counter",
 
+  "INTERFACE.NOTOOL": "Your inventory is empty",
   "INTERFACE.RESET": "Reset",
   "INTERFACE.RESET.BUG": "Sell it all",
   "INTERFACE.RESET.CUSTOMIZABLE": "Customize",
@@ -31,10 +33,16 @@
   "TYPE.FILET.RUDIMENTAIRE": "Flimsy net",
   "TYPE.FILET.NORMAL": "Net",
   "TYPE.FILET.GOLD": "Golden net",
+  "TYPE.FILET.COLORFUL": "Colorful net",
+  "TYPE.FILET.OUTDOORSY": "Outdoorsy net",
+  "TYPE.FILET.CUSTOM": "Star net",
 
   "TYPE.PECHE.RUDIMENTAIRE": "Flimsy fishing rod",
   "TYPE.PECHE.NORMAL": "Fishing rod",
-  "TYPE.PECHE.GOLD": "Fishing rod en or",
+  "TYPE.PECHE.GOLD": "Golden fishing rod",
+  "TYPE.PECHE.COLORFUL": "Colorful fishing rod",
+  "TYPE.PECHE.OUTDOORSY": "Outdoorsy fishing rod",
+  "TYPE.PECHE.CUSTOM": "Fish fishing rod",
 
   "TYPE.HACHE.RUDIMENTAIRE": "Flimsy axe",
   "TYPE.HACHE.NORMAL": "Axe",
@@ -44,13 +52,21 @@
   "TYPE.PELLE.RUDIMENTAIRE": "Flimsy shovel",
   "TYPE.PELLE.NORMAL": "Shovel",
   "TYPE.PELLE.GOLD": "Golden shovel",
+  "TYPE.PELLE.COLORFUL": "Colorful shovel",
+  "TYPE.PELLE.OUTDOORSY": "Outdoorsy shovel",
+  "TYPE.PELLE.CUSTOM": "Printed-design shovel",
 
   "TYPE.LANCEPIERRE.NORMAL": "Slingshot",
   "TYPE.LANCEPIERRE.GOLD": "Golden slingshot",
+  "TYPE.LANCEPIERRE.COLORFUL": "Colorful slingshot",
+  "TYPE.LANCEPIERRE.OUTDOORSY": "Outdoorsy slingshot",
 
   "TYPE.ARROSOIR.RUDIMENTAIRE": "Flimsy watering can",
   "TYPE.ARROSOIR.NORMAL": "Watering can",
   "TYPE.ARROSOIR.GOLD": "Golden watering can",
+  "TYPE.ARROSOIR.COLORFUL": "Colorful watering can",
+  "TYPE.ARROSOIR.OUTDOORSY": "Outdoorsy watering can",
+  "TYPE.ARROSOIR.CUSTOM": "Elephant watering can",
 
   "LOSS.HACHE.PELLE.1": "Hitting Rocks",
   "LOSS.BREAK.HACHE.2": "Hitting Trees",
